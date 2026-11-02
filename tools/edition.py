@@ -7,6 +7,7 @@ read from the results directory.
 import os
 
 EDITION = "EU-300"
+INDEX_NAME = "Pedalability Index: Cycling Risk"
 DATA_STEM = "eu300"                       # data/eu300_city_index.csv, ...
 OSRM_REPO = os.environ.get("OSRM_REPO", r"C:\dev\OSRM_Server")
 RESULTS = os.environ.get("EDITION_RESULTS",

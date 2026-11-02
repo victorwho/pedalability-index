@@ -8,7 +8,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "streets_not_reputations.html")
 SITE = os.path.join(HERE, "site")
 os.makedirs(SITE, exist_ok=True)
-BASE = "https://victorwho.github.io/european-cycling-risk-ranking/"
+BASE = "https://victorwho.github.io/pedalability-index/"
 sys.path.insert(0, HERE)
 import edition  # noqa: E402
 
@@ -147,14 +147,14 @@ doc = f"""<!doctype html>
 <meta name="description" content="{DESC}">
 <link rel="canonical" href="{BASE}">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Streets, Not Reputations">
+<meta property="og:title" content="{edition.INDEX_NAME}">
 <meta property="og:description" content="{DESC}">
 <meta property="og:url" content="{BASE}">
 <meta property="og:image" content="{BASE}social-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Streets, Not Reputations">
+<meta name="twitter:title" content="{edition.INDEX_NAME}">
 <meta name="twitter:description" content="{DESC}">
 <meta name="twitter:image" content="{BASE}social-card.png">
 {chr(10).join(links)}
@@ -193,8 +193,8 @@ for i, c in enumerate(cities):
 ax.set_xlim(-1, len(cities))
 ax.set_ylim(0, 105)
 ax.axis("off")
-fig.text(0.045, 0.90, "STREETS, NOT REPUTATIONS", color="#FAFAF7",
-         fontsize=44, fontweight="bold", family="Arial", va="top")
+fig.text(0.045, 0.90, edition.INDEX_NAME.upper(), color="#FAFAF7",
+         fontsize=40, fontweight="bold", family="Arial", va="top")
 fig.text(0.045, 0.745, f"{N} European cities, ranked by cycling risk — measured, not voted.",
          color="#C9C9D6", fontsize=19, family="Arial", va="top")
 fig.text(0.045, 0.66, "Defensive Pedal Research · 2026", color="#F2C30F",

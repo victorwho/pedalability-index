@@ -1,4 +1,4 @@
-# Streets, Not Reputations
+# Pedalability Index: Cycling Risk
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22771452.svg)](https://doi.org/10.5281/zenodo.22771452)
 
@@ -7,7 +7,7 @@
 with the Defensive Pedal per-road risk model and checked against serious cycling injuries
 per counted bicycle passage.
 
-Live site: https://victorwho.github.io/european-cycling-risk-ranking/
+Live site: https://victorwho.github.io/pedalability-index/
 
 © Defensive Pedal Research, 2026. The ranking and report may be shared with
 attribution; the underlying per-road risk model is proprietary.

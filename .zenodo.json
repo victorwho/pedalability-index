@@ -1,5 +1,5 @@
 {
-  "title": "Streets, Not Reputations: A Street-Level, Injury-Checked Cycling Risk Index for 300 European Cities",
+  "title": "Pedalability Index: Cycling Risk — A Street-Level, Injury-Checked Ranking of 300 European Cities",
   "upload_type": "publication",
   "publication_type": "preprint",
   "version": "2.0.0",
@@ -24,7 +24,7 @@
   "related_identifiers": [
     {
       "relation": "isSupplementTo",
-      "identifier": "https://victorwho.github.io/european-cycling-risk-ranking/",
+      "identifier": "https://victorwho.github.io/pedalability-index/",
       "resource_type": "other"
     }
   ]

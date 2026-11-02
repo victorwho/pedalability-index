@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this study or its data, please cite it as below."
-title: "Streets, Not Reputations: A Street-Level, Injury-Checked Cycling Risk Index for 300 European Cities"
+title: "Pedalability Index: Cycling Risk — A Street-Level, Injury-Checked Ranking of 300 European Cities"
 authors:
   - family-names: Rotariu
     given-names: Victor
@@ -10,8 +10,8 @@ version: 2.0.0
 date-released: 2026-10-20  # set to launch day
 license: CC-BY-4.0
 doi: 10.5281/zenodo.22771452
-url: "https://victorwho.github.io/european-cycling-risk-ranking/"
-repository-code: "https://github.com/victorwho/european-cycling-risk-ranking"
+url: "https://victorwho.github.io/pedalability-index/"
+repository-code: "https://github.com/victorwho/pedalability-index"
 keywords:
   - cycling safety
   - road safety
