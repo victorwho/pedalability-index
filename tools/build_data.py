@@ -34,6 +34,9 @@ COLS = ["rank", "city", "iso2", "slug", "index", "rank_lo", "rank_hi", "tier", "
         "S_norm", "R_norm", "A_norm", "S_rank", "R_rank", "A_rank", "street_risk_per_km",
         "high_risk_share", "journey_risk_mean", "journey_risk_p90", "n_routed",
         "access_composite", "locked_pop_share", "low_stress_km", "street_km", "population"]
+# appended when the results carry absolute_scores.json (ccri_pilot/pedalability_scale.py):
+# the index's own 90% range on the frozen scale, which a city added later shares
+SCALE_COLS = ["index_lo", "index_hi", "scale"]
 
 
 def rep_point(slug):
@@ -50,6 +53,8 @@ def build(results):
     ranks = {k: {c["slug"]: i for i, c in enumerate(sorted(cities, key=lambda c: c[k]), 1)}
              for k in "SRA"}
     tiers = {t: [c["slug"] for c in cities if c["tier"] == t] for t in (1, 2, 3)}
+    absp = os.path.join(results, "absolute_scores.json")
+    absolute = json.load(open(absp, encoding="utf-8")) if os.path.exists(absp) else None
     rows, pins = [], []
     for c in cities:
         s = c["slug"]
@@ -66,6 +71,11 @@ def build(results):
                      pr["r1_route_risk"]["mean"], pr["r1_route_risk"]["p90"], pr["n_routed"],
                      round(acc, 4), locked, pa["T47"]["low_stress_km"], ps["street_km"],
                      r["frame"]["population"]])
+        if absolute:
+            a = absolute[s]
+            if a["index"] != c["index"]:
+                raise SystemExit(f"{s}: absolute score {a['index']} != published {c['index']}")
+            rows[-1] += [a["index_lo"], a["index_hi"], "v1"]
         lst = tiers[c["tier"]]
         lon, lat = rep_point(s)
         pins.append({"s": s, "n": c["label"], "f": FLAG.get(iso, ""), "iso": iso,
@@ -76,7 +86,7 @@ def build(results):
                      "r1": round(pr["r1_route_risk"]["mean"], 1), "locked": round(locked * 100),
                      "km": round(ps["street_km"]),
                      "col": SHADES[c["tier"]][min(3, lst.index(s) * 4 // len(lst))]})
-    return rows, pins
+    return rows, pins, COLS + (SCALE_COLS if absolute else [])
 
 
 def csv_text(header, rows):
@@ -93,9 +103,9 @@ def main():
     ap.add_argument("--stem", default=edition.DATA_STEM)
     ap.add_argument("--check", action="store_true")
     a = ap.parse_args()
-    rows, pins = build(a.results)
+    rows, pins, cols = build(a.results)
     crit = list(csv.reader(open(os.path.join(a.results, "criterion.csv"), encoding="utf-8")))
-    out = {os.path.join(ROOT, "data", f"{a.stem}_city_index.csv"): csv_text(COLS, rows),
+    out = {os.path.join(ROOT, "data", f"{a.stem}_city_index.csv"): csv_text(cols, rows),
            os.path.join(ROOT, "data", f"{a.stem}_criterion_panel.csv"): csv_text(crit[0], crit[1:]),
            os.path.join(HERE, "map_cities.json"): json.dumps(pins, ensure_ascii=False,
                                                             separators=(",", ":"))}

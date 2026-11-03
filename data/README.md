@@ -4,7 +4,11 @@
   interval, tier and stability, the three normalised dimension values and
   per-dimension ranks, and the raw dimension inputs (street risk per km,
   high-risk share, journey risk mean/p90, access composite, locked population
-  share, low-stress km, street km, population).
+  share, low-stress km, street km, population). The last three columns put the index
+  on a fixed scale: `index_lo`/`index_hi` are its 90% range over the same 2,000
+  re-runs, and `scale` = `v1` is the frozen EU-300 scale. A city scored later on v1
+  (same method; `ccri_pilot/pedalability_scale.py`) is directly comparable, and no
+  city in this file changes.
 - `eu300_criterion_panel.csv` — the 18-city criterion panel joining EU-300 index
   values to measured serious-injury rates per cyclist passage (outcome data
   derived from public counter and crash sources).

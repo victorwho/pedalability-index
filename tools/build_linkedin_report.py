@@ -465,6 +465,9 @@ a city in two.</p></div>
 model. The three answers are then combined, the scale is set by the {N} themselves,
 and the whole method is re-run 2,000 times with perturbed assumptions — the wobble
 from those re-runs is the interval printed beside every rank.</p>
+<p>That scale is now fixed. A city scored later, with the same method, gets a number
+that means exactly what the numbers here mean — and no city on this page moves to make
+room for it. The index is an absolute score; the rank is only where it falls among these {N}.</p>
 </div>
 <div class="prose">
 <h2>Five results that will start arguments</h2>
@@ -544,8 +547,8 @@ countries of outcome data can't separate a city from its nation). Rankings that 
 are marketing.</div>
 
 <h2>The full ranking</h2>
-<p class="figcap">* = straddles a tier boundary under re-specification. Index 0–100, higher =
-lower assessed risk. Interval = 90% rank range over 2,000 re-runs.</p>
+<p class="figcap">* = straddles a tier boundary under re-specification. Index 0–100 on a fixed
+scale (v1), higher = lower assessed risk. Interval = 90% rank range over 2,000 re-runs.</p>
 </div>
 <div class="tblwrap"><table>
 <thead><tr><th>#</th><th>City</th><th>Index</th><th>Interval</th></tr></thead>
