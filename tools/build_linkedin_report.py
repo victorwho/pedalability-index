@@ -592,7 +592,7 @@ network risk, the risk of 210 simulated journeys, and low-stress accessibility �
 mandatory parallel path don't count against a city's streets; cities are official municipal
 boundaries.</p>
 <p>Full technical report, criterion analysis and every caveat:
-<a href="https://victorwho.github.io/pedalability-index/report/">{edition.INDEX_NAME} —
+<a href="https://defensivepedal.tech/pedalability-index/report/">{edition.INDEX_NAME} —
 the full study</a> (open access, DOI 10.5281/zenodo.22771452) · Defensive Pedal Research, 2026.
 Study archived at DOI <a href="https://doi.org/10.5281/zenodo.22771452">10.5281/zenodo.22771452</a> (CC-BY-4.0).
 External reference: <a href="https://www.eiturbanmobility.eu/the-copenhagenize-index-2025-eit-urban-mobility-edition-reveals-the-best-bicycle-friendly-cities/">Copenhagenize

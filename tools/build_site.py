@@ -8,7 +8,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "streets_not_reputations.html")
 SITE = os.path.join(HERE, "site")
 os.makedirs(SITE, exist_ok=True)
-BASE = "https://victorwho.github.io/pedalability-index/"
+BASE = "https://defensivepedal.tech/pedalability-index/"
 sys.path.insert(0, HERE)
 import edition  # noqa: E402
 

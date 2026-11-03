@@ -10,7 +10,7 @@ version: 2.0.2
 date-released: 2026-11-03  # set to launch day
 license: CC-BY-4.0
 doi: 10.5281/zenodo.22771452
-url: "https://victorwho.github.io/pedalability-index/"
+url: "https://defensivepedal.tech/pedalability-index/"
 repository-code: "https://github.com/victorwho/pedalability-index"
 keywords:
   - cycling safety

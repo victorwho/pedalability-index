@@ -7,7 +7,7 @@
 with the Defensive Pedal per-road risk model and checked against serious cycling injuries
 per counted bicycle passage.
 
-Live site: https://victorwho.github.io/pedalability-index/
+Live site: https://defensivepedal.tech/pedalability-index/ (this repo's GitHub Pages copy forwards there; the root index.html carries the forwarding tag, the copy deployed on defensivepedal.tech must not)
 
 © Defensive Pedal Research, 2026. The ranking and report may be shared with
 attribution; the underlying per-road risk model is proprietary.
