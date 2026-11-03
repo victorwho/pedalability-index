@@ -160,6 +160,7 @@ th,td { padding:6px 10px; border-bottom:1px solid var(--rule); text-align:left; 
 thead th { font-size:11.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink3); }
 td.r { text-align:right; font-variant-numeric:tabular-nums; }
 td.ci { color:var(--ink3); font-size:13px; }
+@media (max-width:480px) { th,td { padding:6px 5px; } }
 tr.grp.gt1 td { border-bottom-color:var(--g2); } tr.grp.gt2 td { border-bottom-color:var(--y2); }
 tr.grp.gt3 td { border-bottom-color:var(--r2); }
 tr.grp td { font-weight:800; padding-top:22px; border-bottom:2px solid var(--ink2); font-size:12.5px;
@@ -533,313 +534,314 @@ are marketing.</div>
 
 <h2>The full ranking</h2>
 <p class="figcap">* = straddles a tier boundary under re-specification. Index 0–100 on a fixed
-scale (v1), higher = lower assessed risk. Interval = 90% rank range over 2,000 re-runs.</p>
+scale (v1), higher = lower assessed risk. Index range = where the index lands in 90% of 2,000 re-runs.
+Interval = 90% rank range over the same re-runs.</p>
 </div>
 <div class="tblwrap"><table>
-<thead><tr><th>#</th><th>City</th><th>Index</th><th>Interval</th></tr></thead>
-<tbody><tr class="grp gt1"><td colspan="4">Tier 1 — lower assessed risk</td></tr>
-<tr><td class="r">1</td><td>🇸🇪&nbsp;Stockholm</td><td class="r">99</td><td class="r ci">1–6</td></tr>
-<tr><td class="r">2</td><td>🇳🇱&nbsp;Amsterdam</td><td class="r">98</td><td class="r ci">2–15</td></tr>
-<tr><td class="r">3</td><td>🇫🇮&nbsp;Helsinki</td><td class="r">98</td><td class="r ci">1–11</td></tr>
-<tr><td class="r">4</td><td>🇳🇱&nbsp;The Hague</td><td class="r">98</td><td class="r ci">2–14</td></tr>
-<tr><td class="r">5</td><td>🇧🇪&nbsp;Antwerp</td><td class="r">98</td><td class="r ci">3–15</td></tr>
-<tr><td class="r">6</td><td>🇫🇮&nbsp;Vantaa</td><td class="r">97</td><td class="r ci">2–11</td></tr>
-<tr><td class="r">7</td><td>🇳🇱&nbsp;Leiden</td><td class="r">97</td><td class="r ci">2–12</td></tr>
-<tr><td class="r">8</td><td>🇳🇱&nbsp;Haarlem</td><td class="r">97</td><td class="r ci">2–14</td></tr>
-<tr><td class="r">9</td><td>🇫🇮&nbsp;Espoo</td><td class="r">96</td><td class="r ci">3–16</td></tr>
-<tr><td class="r">10</td><td>🇩🇰&nbsp;Copenhagen</td><td class="r">95</td><td class="r ci">4–22</td></tr>
-<tr><td class="r">11</td><td>🇫🇮&nbsp;Tampere</td><td class="r">94</td><td class="r ci">4–18</td></tr>
-<tr><td class="r">12</td><td>🇳🇱&nbsp;Eindhoven</td><td class="r">94</td><td class="r ci">10–26</td></tr>
-<tr><td class="r">13</td><td>🇫🇷&nbsp;Paris</td><td class="r">94</td><td class="r ci">6–19</td></tr>
-<tr><td class="r">14</td><td>🇳🇱&nbsp;Utrecht</td><td class="r">94</td><td class="r ci">10–24</td></tr>
-<tr><td class="r">15</td><td>🇳🇱&nbsp;Rotterdam</td><td class="r">93</td><td class="r ci">9–23</td></tr>
-<tr><td class="r">16</td><td>🇪🇸&nbsp;Barcelona</td><td class="r">93</td><td class="r ci">8–22</td></tr>
-<tr><td class="r">17</td><td>🇧🇪&nbsp;Brussels</td><td class="r">92</td><td class="r ci">4–26</td></tr>
-<tr><td class="r">18</td><td>🇳🇱&nbsp;Nijmegen</td><td class="r">90</td><td class="r ci">15–30</td></tr>
-<tr><td class="r">19</td><td>🇪🇸&nbsp;San Sebastián</td><td class="r">90</td><td class="r ci">18–31</td></tr>
-<tr><td class="r">20</td><td>🇫🇮&nbsp;Turku</td><td class="r">90</td><td class="r ci">6–26</td></tr>
-<tr><td class="r">21</td><td>🇩🇪&nbsp;Hanover</td><td class="r">89</td><td class="r ci">19–32</td></tr>
-<tr><td class="r">22</td><td>🇳🇱&nbsp;Arnhem</td><td class="r">88</td><td class="r ci">19–36</td></tr>
-<tr><td class="r">23</td><td>🇩🇪&nbsp;Munich</td><td class="r">88</td><td class="r ci">21–36</td></tr>
-<tr><td class="r">24</td><td>🇧🇪&nbsp;Ghent</td><td class="r">87</td><td class="r ci">23–41</td></tr>
-<tr><td class="r">25</td><td>🇩🇪&nbsp;Bremen</td><td class="r">87</td><td class="r ci">20–41</td></tr>
-<tr><td class="r">26</td><td>🇫🇷&nbsp;Lyon</td><td class="r">86</td><td class="r ci">13–38</td></tr>
-<tr><td class="r">27</td><td>🇩🇪&nbsp;Braunschweig</td><td class="r">85</td><td class="r ci">25–42</td></tr>
-<tr><td class="r">28</td><td>🇩🇪&nbsp;Lübeck</td><td class="r">85</td><td class="r ci">23–44</td></tr>
-<tr><td class="r">29</td><td>🇳🇱&nbsp;Almere</td><td class="r">85</td><td class="r ci">14–43</td></tr>
-<tr><td class="r">30</td><td>🇪🇸&nbsp;Bilbao</td><td class="r">84</td><td class="r ci">15–54</td></tr>
-<tr><td class="r">31</td><td>🇫🇷&nbsp;Montpellier</td><td class="r">84</td><td class="r ci">27–46</td></tr>
-<tr><td class="r">32</td><td>🇳🇱&nbsp;Groningen</td><td class="r">84</td><td class="r ci">28–43</td></tr>
-<tr><td class="r">33</td><td>🇫🇷&nbsp;Toulouse</td><td class="r">83</td><td class="r ci">29–50</td></tr>
-<tr><td class="r">34</td><td>🇪🇸&nbsp;Albacete</td><td class="r">83</td><td class="r ci">32–48</td></tr>
-<tr><td class="r">35</td><td>🇫🇷&nbsp;Grenoble</td><td class="r">83</td><td class="r ci">23–48</td></tr>
-<tr><td class="r">36</td><td>🇪🇸&nbsp;Salamanca</td><td class="r">82</td><td class="r ci">27–50</td></tr>
-<tr><td class="r">37</td><td>🇩🇪&nbsp;Oldenburg</td><td class="r">82</td><td class="r ci">33–54</td></tr>
-<tr><td class="r">38</td><td>🇫🇷&nbsp;Strasbourg</td><td class="r">81</td><td class="r ci">16–59</td></tr>
-<tr><td class="r">39</td><td>🇳🇱&nbsp;Tilburg</td><td class="r">81</td><td class="r ci">32–53</td></tr>
-<tr><td class="r">40</td><td>🇫🇷&nbsp;Nantes</td><td class="r">81</td><td class="r ci">29–61</td></tr>
-<tr><td class="r">41</td><td>🇪🇸&nbsp;Las Rozas de Madrid</td><td class="r">80</td><td class="r ci">37–55</td></tr>
-<tr><td class="r">42</td><td>🇪🇸&nbsp;Málaga</td><td class="r">80</td><td class="r ci">33–60</td></tr>
-<tr><td class="r">43</td><td>🇸🇪&nbsp;Malmö</td><td class="r">79</td><td class="r ci">15–65</td></tr>
-<tr><td class="r">44</td><td>🇩🇪&nbsp;Münster</td><td class="r">79</td><td class="r ci">41–59</td></tr>
-<tr><td class="r">45</td><td>🇮🇹&nbsp;Bologna</td><td class="r">79</td><td class="r ci">28–58</td></tr>
-<tr><td class="r">46</td><td>🇪🇸&nbsp;Seville</td><td class="r">78</td><td class="r ci">32–67</td></tr>
-<tr><td class="r">47</td><td>🇪🇸&nbsp;Valencia</td><td class="r">78</td><td class="r ci">18–83</td></tr>
-<tr><td class="r">48</td><td>🇩🇪&nbsp;Freiburg</td><td class="r">78</td><td class="r ci">42–66</td></tr>
-<tr><td class="r">49</td><td>🇫🇷&nbsp;Tours</td><td class="r">78</td><td class="r ci">36–77</td></tr>
-<tr><td class="r">50</td><td>🇪🇸&nbsp;Valladolid</td><td class="r">77</td><td class="r ci">42–69</td></tr>
-<tr><td class="r">51</td><td>🇪🇸&nbsp;Sabadell</td><td class="r">77</td><td class="r ci">24–77</td></tr>
-<tr><td class="r">52</td><td>🇪🇸&nbsp;Vitoria-Gasteiz</td><td class="r">76</td><td class="r ci">46–67</td></tr>
-<tr><td class="r">53</td><td>🇩🇪&nbsp;Duisburg</td><td class="r">76</td><td class="r ci">43–72</td></tr>
-<tr><td class="r">54</td><td>🇪🇸&nbsp;Pamplona</td><td class="r">76</td><td class="r ci">46–74</td></tr>
-<tr><td class="r">55</td><td>🇪🇸&nbsp;Burgos</td><td class="r">76</td><td class="r ci">48–78</td></tr>
-<tr><td class="r">56</td><td>🇪🇸&nbsp;Palma</td><td class="r">75</td><td class="r ci">51–67</td></tr>
-<tr><td class="r">57</td><td>🇫🇷&nbsp;Lille</td><td class="r">75</td><td class="r ci">51–79</td></tr>
-<tr><td class="r">58</td><td>🇩🇪&nbsp;Mannheim</td><td class="r">75</td><td class="r ci">45–84</td></tr>
-<tr><td class="r">59</td><td>🇦🇹&nbsp;Vienna</td><td class="r">75</td><td class="r ci">42–88</td></tr>
-<tr><td class="r">60</td><td>🇪🇸&nbsp;Zaragoza</td><td class="r">74</td><td class="r ci">60–75</td></tr>
-<tr><td class="r">61</td><td>🇫🇮&nbsp;Oulu</td><td class="r">73</td><td class="r ci">12–86</td></tr>
-<tr><td class="r">62</td><td>🇪🇸&nbsp;Córdoba</td><td class="r">73</td><td class="r ci">49–82</td></tr>
-<tr><td class="r">63</td><td>🇫🇷&nbsp;Nancy</td><td class="r">73</td><td class="r ci">39–116</td></tr>
-<tr><td class="r">64</td><td>🇩🇪&nbsp;Berlin</td><td class="r">72</td><td class="r ci">50–83</td></tr>
-<tr><td class="r">65</td><td>🇪🇸&nbsp;Sant Cugat del Vallès</td><td class="r">72</td><td class="r ci">51–100</td></tr>
-<tr><td class="r">66</td><td>🇩🇪&nbsp;Bonn</td><td class="r">72</td><td class="r ci">49–102</td></tr>
-<tr><td class="r">67</td><td>🇩🇪&nbsp;Augsburg</td><td class="r">72</td><td class="r ci">58–82</td></tr>
-<tr><td class="r">68</td><td>🇩🇪&nbsp;Magdeburg</td><td class="r">72</td><td class="r ci">64–84</td></tr>
-<tr><td class="r">69</td><td>🇳🇴&nbsp;Trondheim</td><td class="r">71</td><td class="r ci">53–86</td></tr>
-<tr><td class="r">70</td><td>🇳🇱&nbsp;Apeldoorn</td><td class="r">71</td><td class="r ci">55–100</td></tr>
-<tr><td class="r">71</td><td>🇬🇧&nbsp;Milton Keynes</td><td class="r">71</td><td class="r ci">12–98</td></tr>
-<tr><td class="r">72</td><td>🇩🇪&nbsp;Düsseldorf</td><td class="r">71</td><td class="r ci">66–96</td></tr>
-<tr><td class="r">73</td><td>🇦🇹&nbsp;Graz</td><td class="r">71</td><td class="r ci">65–89</td></tr>
-<tr><td class="r">74</td><td>🇳🇴&nbsp;Oslo</td><td class="r">71</td><td class="r ci">46–98</td></tr>
-<tr><td class="r">75</td><td>🇳🇱&nbsp;Breda</td><td class="r">71</td><td class="r ci">59–101</td></tr>
-<tr><td class="r">76</td><td>🇩🇰&nbsp;Odense</td><td class="r">70</td><td class="r ci">41–96</td></tr>
-<tr><td class="r">77</td><td>🇸🇮&nbsp;Maribor</td><td class="r">70</td><td class="r ci">57–91</td></tr>
-<tr><td class="r">78</td><td>🇩🇪&nbsp;Kiel</td><td class="r">70</td><td class="r ci">69–93</td></tr>
-<tr><td class="r">79</td><td>🇪🇸&nbsp;Gijón</td><td class="r">69</td><td class="r ci">55–99</td></tr>
-<tr><td class="r">80</td><td>🇪🇸&nbsp;Elche</td><td class="r">69</td><td class="r ci">74–90</td></tr>
-<tr><td class="r">81</td><td>🇭🇺&nbsp;Szeged</td><td class="r">69</td><td class="r ci">73–93</td></tr>
-<tr><td class="r">82</td><td>🇪🇸&nbsp;Alicante</td><td class="r">68</td><td class="r ci">78–96</td></tr>
-<tr><td class="r">83</td><td>🇫🇷&nbsp;Rennes</td><td class="r">68</td><td class="r ci">65–115</td></tr>
-<tr><td class="r">84</td><td>🇮🇹&nbsp;Reggio Emilia</td><td class="r">68</td><td class="r ci">13–129</td></tr>
-<tr><td class="r">85</td><td>🇩🇰&nbsp;Aarhus</td><td class="r">68</td><td class="r ci">52–106</td></tr>
-<tr><td class="r">86</td><td>🇩🇪&nbsp;Oberhausen</td><td class="r">68</td><td class="r ci">57–125</td></tr>
-<tr><td class="r">87</td><td>🇪🇸&nbsp;Murcia</td><td class="r">68</td><td class="r ci">69–104</td></tr>
-<tr><td class="r">88</td><td>🇩🇪&nbsp;Cologne</td><td class="r">67</td><td class="r ci">74–118</td></tr>
-<tr><td class="r">89</td><td>🇪🇸&nbsp;A Coruña</td><td class="r">67</td><td class="r ci">72–116</td></tr>
-<tr><td class="r">90</td><td>🇪🇸&nbsp;Santander</td><td class="r">67</td><td class="r ci">87–102</td></tr>
-<tr><td class="r">91</td><td>🇵🇱&nbsp;Białystok</td><td class="r">66</td><td class="r ci">70–118</td></tr>
-<tr><td class="r">92</td><td>🇱🇺&nbsp;Luxembourg</td><td class="r">66</td><td class="r ci">83–118</td></tr>
-<tr><td class="r">93</td><td>🇵🇱&nbsp;Wrocław</td><td class="r">66</td><td class="r ci">84–117</td></tr>
-<tr><td class="r">94</td><td>🇩🇪&nbsp;Halle (Saale)</td><td class="r">65</td><td class="r ci">79–120</td></tr>
-<tr><td class="r">95</td><td>🇩🇪&nbsp;Karlsruhe</td><td class="r">65</td><td class="r ci">86–133</td></tr>
-<tr><td class="r">96</td><td>🇸🇮&nbsp;Ljubljana</td><td class="r">64</td><td class="r ci">88–121</td></tr>
-<tr><td class="r">97</td><td>🇩🇪&nbsp;Ludwigshafen am Rhein</td><td class="r">64</td><td class="r ci">78–144</td></tr>
-<tr><td class="r">98</td><td>🇫🇷&nbsp;Orléans*</td><td class="r">64</td><td class="r ci">98–120</td></tr>
-<tr><td class="r">99</td><td>🇪🇸&nbsp;Castellón de la Plana*</td><td class="r">63</td><td class="r ci">81–153</td></tr>
-<tr><td class="r">100</td><td>🇸🇪&nbsp;Uppsala</td><td class="r">63</td><td class="r ci">23–161</td></tr>
-<tr class="grp gt2"><td colspan="4">Tier 2 — middle</td></tr>
-<tr><td class="r">101</td><td>🇳🇴&nbsp;Bergen*</td><td class="r">63</td><td class="r ci">80–139</td></tr>
-<tr><td class="r">102</td><td>🇩🇪&nbsp;Leverkusen*</td><td class="r">62</td><td class="r ci">100–143</td></tr>
-<tr><td class="r">103</td><td>🇩🇪&nbsp;Krefeld*</td><td class="r">62</td><td class="r ci">96–148</td></tr>
-<tr><td class="r">104</td><td>🇪🇸&nbsp;Almería*</td><td class="r">62</td><td class="r ci">103–129</td></tr>
-<tr><td class="r">105</td><td>🇩🇪&nbsp;Gelsenkirchen*</td><td class="r">62</td><td class="r ci">99–149</td></tr>
-<tr><td class="r">106</td><td>🇩🇪&nbsp;Hamburg*</td><td class="r">62</td><td class="r ci">84–154</td></tr>
-<tr><td class="r">107</td><td>🇪🇸&nbsp;Vigo*</td><td class="r">62</td><td class="r ci">81–161</td></tr>
-<tr><td class="r">108</td><td>🇵🇱&nbsp;Gdańsk*</td><td class="r">62</td><td class="r ci">106–132</td></tr>
-<tr><td class="r">109</td><td>🇪🇸&nbsp;Terrassa</td><td class="r">62</td><td class="r ci">94–152</td></tr>
-<tr><td class="r">110</td><td>🇳🇴&nbsp;Stavanger*</td><td class="r">62</td><td class="r ci">91–140</td></tr>
-<tr><td class="r">111</td><td>🇩🇪&nbsp;Hamm</td><td class="r">61</td><td class="r ci">99–154</td></tr>
-<tr><td class="r">112</td><td>🇩🇪&nbsp;Mainz</td><td class="r">61</td><td class="r ci">103–159</td></tr>
-<tr><td class="r">113</td><td>🇩🇪&nbsp;Nuremberg</td><td class="r">61</td><td class="r ci">111–145</td></tr>
-<tr><td class="r">114</td><td>🇩🇪&nbsp;Rostock*</td><td class="r">61</td><td class="r ci">89–156</td></tr>
-<tr><td class="r">115</td><td>🇫🇷&nbsp;Angers*</td><td class="r">61</td><td class="r ci">79–170</td></tr>
-<tr><td class="r">116</td><td>🇭🇺&nbsp;Debrecen*</td><td class="r">61</td><td class="r ci">93–143</td></tr>
-<tr><td class="r">117</td><td>🇵🇱&nbsp;Toruń</td><td class="r">61</td><td class="r ci">102–156</td></tr>
-<tr><td class="r">118</td><td>🇵🇱&nbsp;Łódź</td><td class="r">61</td><td class="r ci">109–135</td></tr>
-<tr><td class="r">119</td><td>🇳🇱&nbsp;Alkmaar*</td><td class="r">60</td><td class="r ci">94–169</td></tr>
-<tr><td class="r">120</td><td>🇩🇪&nbsp;Leipzig*</td><td class="r">60</td><td class="r ci">94–153</td></tr>
-<tr><td class="r">121</td><td>🇫🇷&nbsp;Clermont-Ferrand</td><td class="r">60</td><td class="r ci">110–155</td></tr>
-<tr><td class="r">122</td><td>🇪🇸&nbsp;Jerez de la Frontera</td><td class="r">60</td><td class="r ci">115–140</td></tr>
-<tr><td class="r">123</td><td>🇪🇪&nbsp;Tallinn*</td><td class="r">60</td><td class="r ci">69–157</td></tr>
-<tr><td class="r">124</td><td>🇪🇸&nbsp;Granada</td><td class="r">60</td><td class="r ci">103–175</td></tr>
-<tr><td class="r">125</td><td>🇭🇺&nbsp;Budapest</td><td class="r">60</td><td class="r ci">103–151</td></tr>
-<tr><td class="r">126</td><td>🇩🇪&nbsp;Potsdam</td><td class="r">59</td><td class="r ci">99–177</td></tr>
-<tr><td class="r">127</td><td>🇦🇹&nbsp;Linz</td><td class="r">59</td><td class="r ci">101–175</td></tr>
-<tr><td class="r">128</td><td>🇫🇷&nbsp;Bordeaux</td><td class="r">59</td><td class="r ci">114–170</td></tr>
-<tr><td class="r">129</td><td>🇨🇭&nbsp;Bern*</td><td class="r">59</td><td class="r ci">75–198</td></tr>
-<tr><td class="r">130</td><td>🇩🇪&nbsp;Aachen</td><td class="r">59</td><td class="r ci">103–182</td></tr>
-<tr><td class="r">131</td><td>🇵🇱&nbsp;Warsaw*</td><td class="r">59</td><td class="r ci">83–172</td></tr>
-<tr><td class="r">132</td><td>🇧🇪&nbsp;Liège</td><td class="r">59</td><td class="r ci">91–176</td></tr>
-<tr><td class="r">133</td><td>🇨🇭&nbsp;Geneva</td><td class="r">58</td><td class="r ci">108–166</td></tr>
-<tr><td class="r">134</td><td>🇮🇹&nbsp;Venice*</td><td class="r">58</td><td class="r ci">66–174</td></tr>
-<tr><td class="r">135</td><td>🇬🇧&nbsp;Bedford*</td><td class="r">58</td><td class="r ci">90–175</td></tr>
-<tr><td class="r">136</td><td>🇩🇪&nbsp;Mönchengladbach</td><td class="r">58</td><td class="r ci">114–175</td></tr>
-<tr><td class="r">137</td><td>🇵🇱&nbsp;Gdynia</td><td class="r">58</td><td class="r ci">130–160</td></tr>
-<tr><td class="r">138</td><td>🇬🇧&nbsp;Edinburgh*</td><td class="r">58</td><td class="r ci">88–163</td></tr>
-<tr><td class="r">139</td><td>🇪🇸&nbsp;Madrid</td><td class="r">58</td><td class="r ci">110–161</td></tr>
-<tr><td class="r">140</td><td>🇮🇸&nbsp;Reykjavik</td><td class="r">58</td><td class="r ci">115–177</td></tr>
-<tr><td class="r">141</td><td>🇩🇪&nbsp;Mülheim an der Ruhr</td><td class="r">58</td><td class="r ci">126–177</td></tr>
-<tr><td class="r">142</td><td>🇩🇪&nbsp;Frankfurt</td><td class="r">58</td><td class="r ci">123–173</td></tr>
-<tr><td class="r">143</td><td>🇲🇹&nbsp;Valletta*</td><td class="r">57</td><td class="r ci">75–210</td></tr>
-<tr><td class="r">144</td><td>🇬🇧&nbsp;Peterborough*</td><td class="r">57</td><td class="r ci">85–174</td></tr>
-<tr><td class="r">145</td><td>🇩🇰&nbsp;Aalborg</td><td class="r">57</td><td class="r ci">98–171</td></tr>
-<tr><td class="r">146</td><td>🇬🇧&nbsp;Manchester</td><td class="r">57</td><td class="r ci">117–166</td></tr>
-<tr><td class="r">147</td><td>🇬🇧&nbsp;York</td><td class="r">57</td><td class="r ci">112–171</td></tr>
-<tr><td class="r">148</td><td>🇪🇸&nbsp;Oviedo*</td><td class="r">57</td><td class="r ci">76–207</td></tr>
-<tr><td class="r">149</td><td>🇵🇱&nbsp;Poznań</td><td class="r">56</td><td class="r ci">130–177</td></tr>
-<tr><td class="r">150</td><td>🇮🇹&nbsp;Florence</td><td class="r">56</td><td class="r ci">114–172</td></tr>
-<tr><td class="r">151</td><td>🇵🇱&nbsp;Lublin</td><td class="r">56</td><td class="r ci">119–175</td></tr>
-<tr><td class="r">152</td><td>🇬🇧&nbsp;Bristol</td><td class="r">56</td><td class="r ci">117–181</td></tr>
-<tr><td class="r">153</td><td>🇸🇪&nbsp;Gothenburg</td><td class="r">56</td><td class="r ci">125–189</td></tr>
-<tr><td class="r">154</td><td>🇫🇷&nbsp;Rouen</td><td class="r">55</td><td class="r ci">110–212</td></tr>
-<tr><td class="r">155</td><td>🇩🇪&nbsp;Dortmund</td><td class="r">55</td><td class="r ci">124–186</td></tr>
-<tr><td class="r">156</td><td>🇵🇱&nbsp;Kraków</td><td class="r">55</td><td class="r ci">140–173</td></tr>
-<tr><td class="r">157</td><td>🇬🇧&nbsp;Brighton and Hove</td><td class="r">55</td><td class="r ci">136–179</td></tr>
-<tr><td class="r">158</td><td>🇫🇷&nbsp;Mulhouse</td><td class="r">55</td><td class="r ci">144–191</td></tr>
-<tr><td class="r">159</td><td>🇮🇪&nbsp;Dublin</td><td class="r">54</td><td class="r ci">124–187</td></tr>
-<tr><td class="r">160</td><td>🇮🇹&nbsp;Modena*</td><td class="r">54</td><td class="r ci">75–219</td></tr>
-<tr><td class="r">161</td><td>🇩🇪&nbsp;Bielefeld</td><td class="r">54</td><td class="r ci">135–191</td></tr>
-<tr><td class="r">162</td><td>🇬🇧&nbsp;Nottingham</td><td class="r">54</td><td class="r ci">150–187</td></tr>
-<tr><td class="r">163</td><td>🇩🇪&nbsp;Stuttgart</td><td class="r">54</td><td class="r ci">134–208</td></tr>
-<tr><td class="r">164</td><td>🇩🇪&nbsp;Darmstadt</td><td class="r">53</td><td class="r ci">129–217</td></tr>
-<tr><td class="r">165</td><td>🇸🇰&nbsp;Bratislava</td><td class="r">53</td><td class="r ci">160–180</td></tr>
-<tr><td class="r">166</td><td>🇵🇱&nbsp;Rzeszów</td><td class="r">53</td><td class="r ci">158–183</td></tr>
-<tr><td class="r">167</td><td>🇸🇪&nbsp;Linköping</td><td class="r">53</td><td class="r ci">138–208</td></tr>
-<tr><td class="r">168</td><td>🇬🇧&nbsp;Swindon</td><td class="r">52</td><td class="r ci">104–199</td></tr>
-<tr><td class="r">169</td><td>🇩🇪&nbsp;Kassel</td><td class="r">52</td><td class="r ci">126–223</td></tr>
-<tr><td class="r">170</td><td>🇨🇭&nbsp;Zurich</td><td class="r">52</td><td class="r ci">143–210</td></tr>
-<tr><td class="r">171</td><td>🇩🇪&nbsp;Dresden</td><td class="r">52</td><td class="r ci">132–207</td></tr>
-<tr><td class="r">172</td><td>🇫🇷&nbsp;Reims</td><td class="r">52</td><td class="r ci">157–202</td></tr>
-<tr><td class="r">173</td><td>🇫🇷&nbsp;Metz</td><td class="r">52</td><td class="r ci">154–207</td></tr>
-<tr><td class="r">174</td><td>🇵🇱&nbsp;Bydgoszcz</td><td class="r">52</td><td class="r ci">154–197</td></tr>
-<tr><td class="r">175</td><td>🇮🇹&nbsp;Bergamo</td><td class="r">52</td><td class="r ci">140–191</td></tr>
-<tr><td class="r">176</td><td>🇨🇿&nbsp;Plzeň*</td><td class="r">52</td><td class="r ci">109–199</td></tr>
-<tr><td class="r">177</td><td>🇫🇷&nbsp;Toulon</td><td class="r">52</td><td class="r ci">139–205</td></tr>
-<tr><td class="r">178</td><td>🇮🇹&nbsp;Turin*</td><td class="r">52</td><td class="r ci">39–223</td></tr>
-<tr><td class="r">179</td><td>🇬🇧&nbsp;Portsmouth</td><td class="r">52</td><td class="r ci">168–193</td></tr>
-<tr><td class="r">180</td><td>🇮🇹&nbsp;Parma*</td><td class="r">52</td><td class="r ci">81–218</td></tr>
-<tr><td class="r">181</td><td>🇩🇪&nbsp;Essen</td><td class="r">51</td><td class="r ci">161–204</td></tr>
-<tr><td class="r">182</td><td>🇱🇻&nbsp;Riga</td><td class="r">51</td><td class="r ci">162–192</td></tr>
-<tr><td class="r">183</td><td>🇬🇧&nbsp;Telford</td><td class="r">51</td><td class="r ci">128–200</td></tr>
-<tr><td class="r">184</td><td>🇬🇧&nbsp;Newcastle upon Tyne</td><td class="r">50</td><td class="r ci">153–197</td></tr>
-<tr><td class="r">185</td><td>🇩🇪&nbsp;Bochum</td><td class="r">50</td><td class="r ci">141–217</td></tr>
-<tr><td class="r">186</td><td>🇵🇱&nbsp;Szczecin</td><td class="r">50</td><td class="r ci">171–207</td></tr>
-<tr><td class="r">187</td><td>🇵🇱&nbsp;Kielce</td><td class="r">50</td><td class="r ci">180–203</td></tr>
-<tr><td class="r">188</td><td>🇨🇭&nbsp;Basel</td><td class="r">50</td><td class="r ci">149–223</td></tr>
-<tr><td class="r">189</td><td>🇫🇷&nbsp;Le Havre</td><td class="r">50</td><td class="r ci">173–201</td></tr>
-<tr><td class="r">190</td><td>🇬🇧&nbsp;Leeds*</td><td class="r">49</td><td class="r ci">132–213</td></tr>
-<tr><td class="r">191</td><td>🇬🇧&nbsp;Birmingham*</td><td class="r">49</td><td class="r ci">111–213</td></tr>
-<tr><td class="r">192</td><td>🇫🇷&nbsp;Saint-Étienne*</td><td class="r">49</td><td class="r ci">150–228</td></tr>
-<tr><td class="r">193</td><td>🇬🇧&nbsp;Swansea*</td><td class="r">49</td><td class="r ci">127–213</td></tr>
-<tr><td class="r">194</td><td>🇪🇸&nbsp;Cartagena*</td><td class="r">48</td><td class="r ci">166–220</td></tr>
-<tr><td class="r">195</td><td>🇮🇹&nbsp;Verona*</td><td class="r">48</td><td class="r ci">139–214</td></tr>
-<tr><td class="r">196</td><td>🇮🇹&nbsp;Pescara*</td><td class="r">48</td><td class="r ci">155–209</td></tr>
-<tr><td class="r">197</td><td>🇭🇷&nbsp;Zagreb*</td><td class="r">48</td><td class="r ci">172–212</td></tr>
-<tr><td class="r">198</td><td>🇩🇪&nbsp;Hagen*</td><td class="r">48</td><td class="r ci">146–235</td></tr>
-<tr><td class="r">199</td><td>🇬🇧&nbsp;London*</td><td class="r">48</td><td class="r ci">181–207</td></tr>
-<tr><td class="r">200</td><td>🇨🇭&nbsp;Lausanne*</td><td class="r">48</td><td class="r ci">130–239</td></tr>
-<tr class="grp gt3"><td colspan="4">Tier 3 — higher assessed risk</td></tr>
-<tr><td class="r">201</td><td>🇪🇸&nbsp;Alcalá de Henares*</td><td class="r">48</td><td class="r ci">167–230</td></tr>
-<tr><td class="r">202</td><td>🇨🇿&nbsp;Prague*</td><td class="r">48</td><td class="r ci">188–212</td></tr>
-<tr><td class="r">203</td><td>🇬🇧&nbsp;Southampton*</td><td class="r">47</td><td class="r ci">194–211</td></tr>
-<tr><td class="r">204</td><td>🇱🇹&nbsp;Vilnius*</td><td class="r">47</td><td class="r ci">187–217</td></tr>
-<tr><td class="r">205</td><td>🇩🇪&nbsp;Saarbrücken*</td><td class="r">46</td><td class="r ci">139–244</td></tr>
-<tr><td class="r">206</td><td>🇬🇧&nbsp;Plymouth*</td><td class="r">46</td><td class="r ci">182–219</td></tr>
-<tr><td class="r">207</td><td>🇬🇧&nbsp;Wolverhampton*</td><td class="r">46</td><td class="r ci">146–225</td></tr>
-<tr><td class="r">208</td><td>🇩🇪&nbsp;Wuppertal*</td><td class="r">46</td><td class="r ci">182–233</td></tr>
-<tr><td class="r">209</td><td>🇬🇧&nbsp;Derby*</td><td class="r">46</td><td class="r ci">161–221</td></tr>
-<tr><td class="r">210</td><td>🇬🇧&nbsp;Glasgow*</td><td class="r">46</td><td class="r ci">141–227</td></tr>
-<tr><td class="r">211</td><td>🇮🇹&nbsp;Brescia*</td><td class="r">46</td><td class="r ci">123–237</td></tr>
-<tr><td class="r">212</td><td>🇫🇷&nbsp;Nice</td><td class="r">45</td><td class="r ci">197–219</td></tr>
-<tr><td class="r">213</td><td>🇬🇧&nbsp;Sunderland*</td><td class="r">45</td><td class="r ci">164–230</td></tr>
-<tr><td class="r">214</td><td>🇬🇧&nbsp;Sheffield*</td><td class="r">45</td><td class="r ci">198–225</td></tr>
-<tr><td class="r">215</td><td>🇬🇧&nbsp;Warrington</td><td class="r">44</td><td class="r ci">186–235</td></tr>
-<tr><td class="r">216</td><td>🇵🇱&nbsp;Katowice</td><td class="r">44</td><td class="r ci">205–225</td></tr>
-<tr><td class="r">217</td><td>🇵🇱&nbsp;Częstochowa</td><td class="r">44</td><td class="r ci">170–247</td></tr>
-<tr><td class="r">218</td><td>🇩🇪&nbsp;Erfurt</td><td class="r">44</td><td class="r ci">205–230</td></tr>
-<tr><td class="r">219</td><td>🇬🇧&nbsp;Leicester</td><td class="r">43</td><td class="r ci">186–236</td></tr>
-<tr><td class="r">220</td><td>🇩🇪&nbsp;Chemnitz</td><td class="r">42</td><td class="r ci">199–239</td></tr>
-<tr><td class="r">221</td><td>🇵🇱&nbsp;Radom</td><td class="r">42</td><td class="r ci">202–237</td></tr>
-<tr><td class="r">222</td><td>🇫🇷&nbsp;Marseille</td><td class="r">42</td><td class="r ci">207–233</td></tr>
-<tr><td class="r">223</td><td>🇮🇹&nbsp;Prato*</td><td class="r">42</td><td class="r ci">147–250</td></tr>
-<tr><td class="r">224</td><td>🇵🇱&nbsp;Gliwice</td><td class="r">42</td><td class="r ci">203–242</td></tr>
-<tr><td class="r">225</td><td>🇬🇧&nbsp;Basingstoke</td><td class="r">42</td><td class="r ci">215–232</td></tr>
-<tr><td class="r">226</td><td>🇵🇱&nbsp;Sosnowiec</td><td class="r">42</td><td class="r ci">219–232</td></tr>
-<tr><td class="r">227</td><td>🇮🇹&nbsp;Genoa</td><td class="r">40</td><td class="r ci">196–252</td></tr>
-<tr><td class="r">228</td><td>🇪🇸&nbsp;Fuenlabrada</td><td class="r">40</td><td class="r ci">227–238</td></tr>
-<tr><td class="r">229</td><td>🇬🇧&nbsp;Stoke-on-Trent</td><td class="r">40</td><td class="r ci">172–251</td></tr>
-<tr><td class="r">230</td><td>🇧🇬&nbsp;Plovdiv</td><td class="r">40</td><td class="r ci">156–256</td></tr>
-<tr><td class="r">231</td><td>🇬🇷&nbsp;Thessaloniki</td><td class="r">40</td><td class="r ci">167–259</td></tr>
-<tr><td class="r">232</td><td>🇬🇧&nbsp;Kingston upon Hull</td><td class="r">40</td><td class="r ci">206–243</td></tr>
-<tr><td class="r">233</td><td>🇱🇹&nbsp;Kaunas</td><td class="r">40</td><td class="r ci">225–240</td></tr>
-<tr><td class="r">234</td><td>🇸🇰&nbsp;Košice</td><td class="r">40</td><td class="r ci">218–242</td></tr>
-<tr><td class="r">235</td><td>🇨🇿&nbsp;Ostrava</td><td class="r">39</td><td class="r ci">198–247</td></tr>
-<tr><td class="r">236</td><td>🇬🇧&nbsp;Medway</td><td class="r">39</td><td class="r ci">218–245</td></tr>
-<tr><td class="r">237</td><td>🇬🇧&nbsp;Cardiff</td><td class="r">38</td><td class="r ci">222–247</td></tr>
-<tr><td class="r">238</td><td>🇨🇿&nbsp;Brno</td><td class="r">38</td><td class="r ci">232–244</td></tr>
-<tr><td class="r">239</td><td>🇩🇪&nbsp;Wiesbaden</td><td class="r">38</td><td class="r ci">216–257</td></tr>
-<tr><td class="r">240</td><td>🇬🇧&nbsp;Coventry</td><td class="r">37</td><td class="r ci">196–257</td></tr>
-<tr><td class="r">241</td><td>🇬🇧&nbsp;Colchester</td><td class="r">37</td><td class="r ci">231–251</td></tr>
-<tr><td class="r">242</td><td>🇮🇹&nbsp;Milan</td><td class="r">37</td><td class="r ci">218–251</td></tr>
-<tr><td class="r">243</td><td>🇬🇧&nbsp;Bradford</td><td class="r">37</td><td class="r ci">229–250</td></tr>
-<tr><td class="r">244</td><td>🇮🇹&nbsp;Padua</td><td class="r">36</td><td class="r ci">234–252</td></tr>
-<tr><td class="r">245</td><td>🇧🇬&nbsp;Varna</td><td class="r">36</td><td class="r ci">227–254</td></tr>
-<tr><td class="r">246</td><td>🇷🇴&nbsp;Cluj-Napoca</td><td class="r">36</td><td class="r ci">230–256</td></tr>
-<tr><td class="r">247</td><td>🇵🇹&nbsp;Lisbon</td><td class="r">34</td><td class="r ci">203–269</td></tr>
-<tr><td class="r">248</td><td>🇧🇪&nbsp;Charleroi</td><td class="r">33</td><td class="r ci">228–261</td></tr>
-<tr><td class="r">249</td><td>🇬🇧&nbsp;Luton</td><td class="r">33</td><td class="r ci">248–256</td></tr>
-<tr><td class="r">250</td><td>🇮🇪&nbsp;Cork</td><td class="r">32</td><td class="r ci">243–262</td></tr>
-<tr><td class="r">251</td><td>🇮🇹&nbsp;Trieste</td><td class="r">32</td><td class="r ci">248–258</td></tr>
-<tr><td class="r">252</td><td>🇫🇷&nbsp;Dijon</td><td class="r">32</td><td class="r ci">233–268</td></tr>
-<tr><td class="r">253</td><td>🇧🇬&nbsp;Sofia</td><td class="r">32</td><td class="r ci">250–260</td></tr>
-<tr><td class="r">254</td><td>🇵🇹&nbsp;Porto</td><td class="r">32</td><td class="r ci">224–268</td></tr>
-<tr><td class="r">255</td><td>🇮🇹&nbsp;Rome</td><td class="r">31</td><td class="r ci">243–266</td></tr>
-<tr><td class="r">256</td><td>🇬🇧&nbsp;Northampton</td><td class="r">31</td><td class="r ci">248–263</td></tr>
-<tr><td class="r">257</td><td>🇵🇹&nbsp;Sintra</td><td class="r">30</td><td class="r ci">244–267</td></tr>
-<tr><td class="r">258</td><td>🇬🇧&nbsp;Aberdeen</td><td class="r">30</td><td class="r ci">252–266</td></tr>
-<tr><td class="r">259</td><td>🇬🇧&nbsp;Belfast</td><td class="r">30</td><td class="r ci">248–266</td></tr>
-<tr><td class="r">260</td><td>🇮🇹&nbsp;Cagliari</td><td class="r">30</td><td class="r ci">245–271</td></tr>
-<tr><td class="r">261</td><td>🇬🇷&nbsp;Patras</td><td class="r">29</td><td class="r ci">217–279</td></tr>
-<tr><td class="r">262</td><td>🇬🇧&nbsp;Liverpool</td><td class="r">29</td><td class="r ci">256–268</td></tr>
-<tr><td class="r">263</td><td>🇮🇹&nbsp;Naples</td><td class="r">28</td><td class="r ci">232–275</td></tr>
-<tr><td class="r">264</td><td>🇮🇹&nbsp;Palermo</td><td class="r">28</td><td class="r ci">258–270</td></tr>
-<tr><td class="r">265</td><td>🇮🇹&nbsp;Messina</td><td class="r">27</td><td class="r ci">221–280</td></tr>
-<tr><td class="r">266</td><td>🇷🇴&nbsp;Arad</td><td class="r">26</td><td class="r ci">260–273</td></tr>
-<tr><td class="r">267</td><td>🇷🇴&nbsp;Satu Mare</td><td class="r">26</td><td class="r ci">233–284</td></tr>
-<tr><td class="r">268</td><td>🇬🇧&nbsp;Doncaster</td><td class="r">26</td><td class="r ci">264–274</td></tr>
-<tr><td class="r">269</td><td>🇮🇹&nbsp;Taranto</td><td class="r">26</td><td class="r ci">264–272</td></tr>
-<tr><td class="r">270</td><td>🇷🇴&nbsp;Oradea</td><td class="r">26</td><td class="r ci">239–284</td></tr>
-<tr><td class="r">271</td><td>🇨🇾&nbsp;Nicosia</td><td class="r">25</td><td class="r ci">267–272</td></tr>
-<tr><td class="r">272</td><td>🇷🇴&nbsp;Targu Mures</td><td class="r">23</td><td class="r ci">261–279</td></tr>
-<tr><td class="r">273</td><td>🇮🇹&nbsp;Reggio Calabria</td><td class="r">23</td><td class="r ci">245–286</td></tr>
-<tr><td class="r">274</td><td>🇧🇬&nbsp;Burgas</td><td class="r">22</td><td class="r ci">258–286</td></tr>
-<tr><td class="r">275</td><td>🇷🇴&nbsp;Brasov</td><td class="r">22</td><td class="r ci">264–281</td></tr>
-<tr><td class="r">276</td><td>🇬🇧&nbsp;Maidstone</td><td class="r">21</td><td class="r ci">262–284</td></tr>
-<tr><td class="r">277</td><td>🇷🇴&nbsp;Sibiu</td><td class="r">21</td><td class="r ci">273–279</td></tr>
-<tr><td class="r">278</td><td>🇬🇧&nbsp;Bournemouth</td><td class="r">20</td><td class="r ci">271–281</td></tr>
-<tr><td class="r">279</td><td>🇮🇹&nbsp;Bari</td><td class="r">20</td><td class="r ci">272–285</td></tr>
-<tr><td class="r">280</td><td>🇵🇹&nbsp;Braga</td><td class="r">19</td><td class="r ci">274–283</td></tr>
-<tr><td class="r">281</td><td>🇷🇴&nbsp;Timisoara</td><td class="r">19</td><td class="r ci">275–282</td></tr>
-<tr><td class="r">282</td><td>🇮🇹&nbsp;Catania</td><td class="r">18</td><td class="r ci">266–290</td></tr>
-<tr><td class="r">283</td><td>🇷🇴&nbsp;Constanta</td><td class="r">17</td><td class="r ci">280–286</td></tr>
-<tr><td class="r">284</td><td>🇬🇷&nbsp;Athens</td><td class="r">16</td><td class="r ci">281–285</td></tr>
-<tr><td class="r">285</td><td>🇷🇴&nbsp;Baia Mare</td><td class="r">15</td><td class="r ci">279–289</td></tr>
-<tr><td class="r">286</td><td>🇷🇴&nbsp;Bucharest</td><td class="r">15</td><td class="r ci">277–289</td></tr>
-<tr><td class="r">287</td><td>🇨🇾&nbsp;Limassol</td><td class="r">14</td><td class="r ci">279–290</td></tr>
-<tr><td class="r">288</td><td>🇭🇷&nbsp;Split</td><td class="r">12</td><td class="r ci">278–294</td></tr>
-<tr><td class="r">289</td><td>🇷🇴&nbsp;Bacau</td><td class="r">12</td><td class="r ci">282–289</td></tr>
-<tr><td class="r">290</td><td>🇷🇴&nbsp;Pitesti</td><td class="r">10</td><td class="r ci">287–293</td></tr>
-<tr><td class="r">291</td><td>🇨🇾&nbsp;Strovolos</td><td class="r">9</td><td class="r ci">285–294</td></tr>
-<tr><td class="r">292</td><td>🇷🇴&nbsp;Craiova</td><td class="r">7</td><td class="r ci">290–294</td></tr>
-<tr><td class="r">293</td><td>🇷🇴&nbsp;Galati</td><td class="r">6</td><td class="r ci">291–295</td></tr>
-<tr><td class="r">294</td><td>🇨🇾&nbsp;Paphos</td><td class="r">5</td><td class="r ci">292–295</td></tr>
-<tr><td class="r">295</td><td>🇷🇴&nbsp;Botosani</td><td class="r">3</td><td class="r ci">292–296</td></tr>
-<tr><td class="r">296</td><td>🇷🇴&nbsp;Buzau</td><td class="r">2</td><td class="r ci">294–298</td></tr>
-<tr><td class="r">297</td><td>🇷🇴&nbsp;Ploiesti</td><td class="r">1</td><td class="r ci">295–298</td></tr>
-<tr><td class="r">298</td><td>🇷🇴&nbsp;Braila</td><td class="r">1</td><td class="r ci">297–299</td></tr>
-<tr><td class="r">299</td><td>🇷🇴&nbsp;Iasi</td><td class="r">0</td><td class="r ci">299–300</td></tr>
-<tr><td class="r">300</td><td>🇨🇾&nbsp;Larnaca</td><td class="r">0</td><td class="r ci">296–300</td></tr></tbody>
+<thead><tr><th>#</th><th>City</th><th>Index</th><th>Index range</th><th>Interval</th></tr></thead>
+<tbody><tr class="grp gt1"><td colspan="5">Tier 1 — lower assessed risk</td></tr>
+<tr><td class="r">1</td><td>🇸🇪&nbsp;Stockholm</td><td class="r">99</td><td class="r ci">97–100</td><td class="r ci">1–6</td></tr>
+<tr><td class="r">2</td><td>🇳🇱&nbsp;Amsterdam</td><td class="r">98</td><td class="r ci">94–100</td><td class="r ci">2–15</td></tr>
+<tr><td class="r">3</td><td>🇫🇮&nbsp;Helsinki</td><td class="r">98</td><td class="r ci">95–100</td><td class="r ci">1–11</td></tr>
+<tr><td class="r">4</td><td>🇳🇱&nbsp;The Hague</td><td class="r">98</td><td class="r ci">94–100</td><td class="r ci">2–14</td></tr>
+<tr><td class="r">5</td><td>🇧🇪&nbsp;Antwerp</td><td class="r">98</td><td class="r ci">94–100</td><td class="r ci">3–15</td></tr>
+<tr><td class="r">6</td><td>🇫🇮&nbsp;Vantaa</td><td class="r">97</td><td class="r ci">94–100</td><td class="r ci">2–11</td></tr>
+<tr><td class="r">7</td><td>🇳🇱&nbsp;Leiden</td><td class="r">97</td><td class="r ci">94–100</td><td class="r ci">2–12</td></tr>
+<tr><td class="r">8</td><td>🇳🇱&nbsp;Haarlem</td><td class="r">97</td><td class="r ci">94–100</td><td class="r ci">2–14</td></tr>
+<tr><td class="r">9</td><td>🇫🇮&nbsp;Espoo</td><td class="r">96</td><td class="r ci">93–100</td><td class="r ci">3–16</td></tr>
+<tr><td class="r">10</td><td>🇩🇰&nbsp;Copenhagen</td><td class="r">95</td><td class="r ci">92–100</td><td class="r ci">4–22</td></tr>
+<tr><td class="r">11</td><td>🇫🇮&nbsp;Tampere</td><td class="r">94</td><td class="r ci">91–100</td><td class="r ci">4–18</td></tr>
+<tr><td class="r">12</td><td>🇳🇱&nbsp;Eindhoven</td><td class="r">94</td><td class="r ci">90–99</td><td class="r ci">10–26</td></tr>
+<tr><td class="r">13</td><td>🇫🇷&nbsp;Paris</td><td class="r">94</td><td class="r ci">90–100</td><td class="r ci">6–19</td></tr>
+<tr><td class="r">14</td><td>🇳🇱&nbsp;Utrecht</td><td class="r">94</td><td class="r ci">90–100</td><td class="r ci">10–24</td></tr>
+<tr><td class="r">15</td><td>🇳🇱&nbsp;Rotterdam</td><td class="r">93</td><td class="r ci">90–100</td><td class="r ci">9–23</td></tr>
+<tr><td class="r">16</td><td>🇪🇸&nbsp;Barcelona</td><td class="r">93</td><td class="r ci">90–100</td><td class="r ci">8–22</td></tr>
+<tr><td class="r">17</td><td>🇧🇪&nbsp;Brussels</td><td class="r">92</td><td class="r ci">86–100</td><td class="r ci">4–26</td></tr>
+<tr><td class="r">18</td><td>🇳🇱&nbsp;Nijmegen</td><td class="r">90</td><td class="r ci">86–96</td><td class="r ci">15–30</td></tr>
+<tr><td class="r">19</td><td>🇪🇸&nbsp;San Sebastián</td><td class="r">90</td><td class="r ci">87–94</td><td class="r ci">18–31</td></tr>
+<tr><td class="r">20</td><td>🇫🇮&nbsp;Turku</td><td class="r">90</td><td class="r ci">86–100</td><td class="r ci">6–26</td></tr>
+<tr><td class="r">21</td><td>🇩🇪&nbsp;Hanover</td><td class="r">89</td><td class="r ci">86–94</td><td class="r ci">19–32</td></tr>
+<tr><td class="r">22</td><td>🇳🇱&nbsp;Arnhem</td><td class="r">88</td><td class="r ci">84–94</td><td class="r ci">19–36</td></tr>
+<tr><td class="r">23</td><td>🇩🇪&nbsp;Munich</td><td class="r">88</td><td class="r ci">84–93</td><td class="r ci">21–36</td></tr>
+<tr><td class="r">24</td><td>🇧🇪&nbsp;Ghent</td><td class="r">87</td><td class="r ci">83–91</td><td class="r ci">23–41</td></tr>
+<tr><td class="r">25</td><td>🇩🇪&nbsp;Bremen</td><td class="r">87</td><td class="r ci">83–92</td><td class="r ci">20–41</td></tr>
+<tr><td class="r">26</td><td>🇫🇷&nbsp;Lyon</td><td class="r">86</td><td class="r ci">81–100</td><td class="r ci">13–38</td></tr>
+<tr><td class="r">27</td><td>🇩🇪&nbsp;Braunschweig</td><td class="r">85</td><td class="r ci">82–90</td><td class="r ci">25–42</td></tr>
+<tr><td class="r">28</td><td>🇩🇪&nbsp;Lübeck</td><td class="r">85</td><td class="r ci">81–92</td><td class="r ci">23–44</td></tr>
+<tr><td class="r">29</td><td>🇳🇱&nbsp;Almere</td><td class="r">85</td><td class="r ci">80–100</td><td class="r ci">14–43</td></tr>
+<tr><td class="r">30</td><td>🇪🇸&nbsp;Bilbao</td><td class="r">84</td><td class="r ci">77–100</td><td class="r ci">15–54</td></tr>
+<tr><td class="r">31</td><td>🇫🇷&nbsp;Montpellier</td><td class="r">84</td><td class="r ci">80–90</td><td class="r ci">27–46</td></tr>
+<tr><td class="r">32</td><td>🇳🇱&nbsp;Groningen</td><td class="r">84</td><td class="r ci">80–89</td><td class="r ci">28–43</td></tr>
+<tr><td class="r">33</td><td>🇫🇷&nbsp;Toulouse</td><td class="r">83</td><td class="r ci">79–88</td><td class="r ci">29–50</td></tr>
+<tr><td class="r">34</td><td>🇪🇸&nbsp;Albacete</td><td class="r">83</td><td class="r ci">79–88</td><td class="r ci">32–48</td></tr>
+<tr><td class="r">35</td><td>🇫🇷&nbsp;Grenoble</td><td class="r">83</td><td class="r ci">78–97</td><td class="r ci">23–48</td></tr>
+<tr><td class="r">36</td><td>🇪🇸&nbsp;Salamanca</td><td class="r">82</td><td class="r ci">78–91</td><td class="r ci">27–50</td></tr>
+<tr><td class="r">37</td><td>🇩🇪&nbsp;Oldenburg</td><td class="r">82</td><td class="r ci">78–86</td><td class="r ci">33–54</td></tr>
+<tr><td class="r">38</td><td>🇫🇷&nbsp;Strasbourg</td><td class="r">81</td><td class="r ci">74–100</td><td class="r ci">16–59</td></tr>
+<tr><td class="r">39</td><td>🇳🇱&nbsp;Tilburg</td><td class="r">81</td><td class="r ci">76–88</td><td class="r ci">32–53</td></tr>
+<tr><td class="r">40</td><td>🇫🇷&nbsp;Nantes</td><td class="r">81</td><td class="r ci">75–87</td><td class="r ci">29–61</td></tr>
+<tr><td class="r">41</td><td>🇪🇸&nbsp;Las Rozas de Madrid</td><td class="r">80</td><td class="r ci">77–84</td><td class="r ci">37–55</td></tr>
+<tr><td class="r">42</td><td>🇪🇸&nbsp;Málaga</td><td class="r">80</td><td class="r ci">75–85</td><td class="r ci">33–60</td></tr>
+<tr><td class="r">43</td><td>🇸🇪&nbsp;Malmö</td><td class="r">79</td><td class="r ci">72–100</td><td class="r ci">15–65</td></tr>
+<tr><td class="r">44</td><td>🇩🇪&nbsp;Münster</td><td class="r">79</td><td class="r ci">76–83</td><td class="r ci">41–59</td></tr>
+<tr><td class="r">45</td><td>🇮🇹&nbsp;Bologna</td><td class="r">79</td><td class="r ci">74–93</td><td class="r ci">28–58</td></tr>
+<tr><td class="r">46</td><td>🇪🇸&nbsp;Seville</td><td class="r">78</td><td class="r ci">72–90</td><td class="r ci">32–67</td></tr>
+<tr><td class="r">47</td><td>🇪🇸&nbsp;Valencia</td><td class="r">78</td><td class="r ci">69–100</td><td class="r ci">18–83</td></tr>
+<tr><td class="r">48</td><td>🇩🇪&nbsp;Freiburg</td><td class="r">78</td><td class="r ci">74–82</td><td class="r ci">42–66</td></tr>
+<tr><td class="r">49</td><td>🇫🇷&nbsp;Tours</td><td class="r">78</td><td class="r ci">72–85</td><td class="r ci">36–77</td></tr>
+<tr><td class="r">50</td><td>🇪🇸&nbsp;Valladolid</td><td class="r">77</td><td class="r ci">72–85</td><td class="r ci">42–69</td></tr>
+<tr><td class="r">51</td><td>🇪🇸&nbsp;Sabadell</td><td class="r">77</td><td class="r ci">71–97</td><td class="r ci">24–77</td></tr>
+<tr><td class="r">52</td><td>🇪🇸&nbsp;Vitoria-Gasteiz</td><td class="r">76</td><td class="r ci">72–83</td><td class="r ci">46–67</td></tr>
+<tr><td class="r">53</td><td>🇩🇪&nbsp;Duisburg</td><td class="r">76</td><td class="r ci">72–82</td><td class="r ci">43–72</td></tr>
+<tr><td class="r">54</td><td>🇪🇸&nbsp;Pamplona</td><td class="r">76</td><td class="r ci">71–83</td><td class="r ci">46–74</td></tr>
+<tr><td class="r">55</td><td>🇪🇸&nbsp;Burgos</td><td class="r">76</td><td class="r ci">70–83</td><td class="r ci">48–78</td></tr>
+<tr><td class="r">56</td><td>🇪🇸&nbsp;Palma</td><td class="r">75</td><td class="r ci">72–80</td><td class="r ci">51–67</td></tr>
+<tr><td class="r">57</td><td>🇫🇷&nbsp;Lille</td><td class="r">75</td><td class="r ci">71–79</td><td class="r ci">51–79</td></tr>
+<tr><td class="r">58</td><td>🇩🇪&nbsp;Mannheim</td><td class="r">75</td><td class="r ci">70–83</td><td class="r ci">45–84</td></tr>
+<tr><td class="r">59</td><td>🇦🇹&nbsp;Vienna</td><td class="r">75</td><td class="r ci">68–86</td><td class="r ci">42–88</td></tr>
+<tr><td class="r">60</td><td>🇪🇸&nbsp;Zaragoza</td><td class="r">74</td><td class="r ci">70–78</td><td class="r ci">60–75</td></tr>
+<tr><td class="r">61</td><td>🇫🇮&nbsp;Oulu</td><td class="r">73</td><td class="r ci">66–100</td><td class="r ci">12–86</td></tr>
+<tr><td class="r">62</td><td>🇪🇸&nbsp;Córdoba</td><td class="r">73</td><td class="r ci">69–79</td><td class="r ci">49–82</td></tr>
+<tr><td class="r">63</td><td>🇫🇷&nbsp;Nancy</td><td class="r">73</td><td class="r ci">65–84</td><td class="r ci">39–116</td></tr>
+<tr><td class="r">64</td><td>🇩🇪&nbsp;Berlin</td><td class="r">72</td><td class="r ci">68–79</td><td class="r ci">50–83</td></tr>
+<tr><td class="r">65</td><td>🇪🇸&nbsp;Sant Cugat del Vallès</td><td class="r">72</td><td class="r ci">67–78</td><td class="r ci">51–100</td></tr>
+<tr><td class="r">66</td><td>🇩🇪&nbsp;Bonn</td><td class="r">72</td><td class="r ci">67–80</td><td class="r ci">49–102</td></tr>
+<tr><td class="r">67</td><td>🇩🇪&nbsp;Augsburg</td><td class="r">72</td><td class="r ci">68–76</td><td class="r ci">58–82</td></tr>
+<tr><td class="r">68</td><td>🇩🇪&nbsp;Magdeburg</td><td class="r">72</td><td class="r ci">68–76</td><td class="r ci">64–84</td></tr>
+<tr><td class="r">69</td><td>🇳🇴&nbsp;Trondheim</td><td class="r">71</td><td class="r ci">65–80</td><td class="r ci">53–86</td></tr>
+<tr><td class="r">70</td><td>🇳🇱&nbsp;Apeldoorn</td><td class="r">71</td><td class="r ci">66–80</td><td class="r ci">55–100</td></tr>
+<tr><td class="r">71</td><td>🇬🇧&nbsp;Milton Keynes</td><td class="r">71</td><td class="r ci">63–100</td><td class="r ci">12–98</td></tr>
+<tr><td class="r">72</td><td>🇩🇪&nbsp;Düsseldorf</td><td class="r">71</td><td class="r ci">67–74</td><td class="r ci">66–96</td></tr>
+<tr><td class="r">73</td><td>🇦🇹&nbsp;Graz</td><td class="r">71</td><td class="r ci">67–77</td><td class="r ci">65–89</td></tr>
+<tr><td class="r">74</td><td>🇳🇴&nbsp;Oslo</td><td class="r">71</td><td class="r ci">62–81</td><td class="r ci">46–98</td></tr>
+<tr><td class="r">75</td><td>🇳🇱&nbsp;Breda</td><td class="r">71</td><td class="r ci">65–80</td><td class="r ci">59–101</td></tr>
+<tr><td class="r">76</td><td>🇩🇰&nbsp;Odense</td><td class="r">70</td><td class="r ci">65–86</td><td class="r ci">41–96</td></tr>
+<tr><td class="r">77</td><td>🇸🇮&nbsp;Maribor</td><td class="r">70</td><td class="r ci">64–78</td><td class="r ci">57–91</td></tr>
+<tr><td class="r">78</td><td>🇩🇪&nbsp;Kiel</td><td class="r">70</td><td class="r ci">67–74</td><td class="r ci">69–93</td></tr>
+<tr><td class="r">79</td><td>🇪🇸&nbsp;Gijón</td><td class="r">69</td><td class="r ci">63–78</td><td class="r ci">55–99</td></tr>
+<tr><td class="r">80</td><td>🇪🇸&nbsp;Elche</td><td class="r">69</td><td class="r ci">66–74</td><td class="r ci">74–90</td></tr>
+<tr><td class="r">81</td><td>🇭🇺&nbsp;Szeged</td><td class="r">69</td><td class="r ci">65–74</td><td class="r ci">73–93</td></tr>
+<tr><td class="r">82</td><td>🇪🇸&nbsp;Alicante</td><td class="r">68</td><td class="r ci">65–73</td><td class="r ci">78–96</td></tr>
+<tr><td class="r">83</td><td>🇫🇷&nbsp;Rennes</td><td class="r">68</td><td class="r ci">63–75</td><td class="r ci">65–115</td></tr>
+<tr><td class="r">84</td><td>🇮🇹&nbsp;Reggio Emilia</td><td class="r">68</td><td class="r ci">59–100</td><td class="r ci">13–129</td></tr>
+<tr><td class="r">85</td><td>🇩🇰&nbsp;Aarhus</td><td class="r">68</td><td class="r ci">61–81</td><td class="r ci">52–106</td></tr>
+<tr><td class="r">86</td><td>🇩🇪&nbsp;Oberhausen</td><td class="r">68</td><td class="r ci">62–77</td><td class="r ci">57–125</td></tr>
+<tr><td class="r">87</td><td>🇪🇸&nbsp;Murcia</td><td class="r">68</td><td class="r ci">63–74</td><td class="r ci">69–104</td></tr>
+<tr><td class="r">88</td><td>🇩🇪&nbsp;Cologne</td><td class="r">67</td><td class="r ci">64–71</td><td class="r ci">74–118</td></tr>
+<tr><td class="r">89</td><td>🇪🇸&nbsp;A Coruña</td><td class="r">67</td><td class="r ci">63–72</td><td class="r ci">72–116</td></tr>
+<tr><td class="r">90</td><td>🇪🇸&nbsp;Santander</td><td class="r">67</td><td class="r ci">63–71</td><td class="r ci">87–102</td></tr>
+<tr><td class="r">91</td><td>🇵🇱&nbsp;Białystok</td><td class="r">66</td><td class="r ci">61–76</td><td class="r ci">70–118</td></tr>
+<tr><td class="r">92</td><td>🇱🇺&nbsp;Luxembourg</td><td class="r">66</td><td class="r ci">62–70</td><td class="r ci">83–118</td></tr>
+<tr><td class="r">93</td><td>🇵🇱&nbsp;Wrocław</td><td class="r">66</td><td class="r ci">61–72</td><td class="r ci">84–117</td></tr>
+<tr><td class="r">94</td><td>🇩🇪&nbsp;Halle (Saale)</td><td class="r">65</td><td class="r ci">60–72</td><td class="r ci">79–120</td></tr>
+<tr><td class="r">95</td><td>🇩🇪&nbsp;Karlsruhe</td><td class="r">65</td><td class="r ci">62–69</td><td class="r ci">86–133</td></tr>
+<tr><td class="r">96</td><td>🇸🇮&nbsp;Ljubljana</td><td class="r">64</td><td class="r ci">59–70</td><td class="r ci">88–121</td></tr>
+<tr><td class="r">97</td><td>🇩🇪&nbsp;Ludwigshafen am Rhein</td><td class="r">64</td><td class="r ci">60–69</td><td class="r ci">78–144</td></tr>
+<tr><td class="r">98</td><td>🇫🇷&nbsp;Orléans*</td><td class="r">64</td><td class="r ci">60–68</td><td class="r ci">98–120</td></tr>
+<tr><td class="r">99</td><td>🇪🇸&nbsp;Castellón de la Plana*</td><td class="r">63</td><td class="r ci">57–72</td><td class="r ci">81–153</td></tr>
+<tr><td class="r">100</td><td>🇸🇪&nbsp;Uppsala</td><td class="r">63</td><td class="r ci">55–98</td><td class="r ci">23–161</td></tr>
+<tr class="grp gt2"><td colspan="5">Tier 2 — middle</td></tr>
+<tr><td class="r">101</td><td>🇳🇴&nbsp;Bergen*</td><td class="r">63</td><td class="r ci">55–72</td><td class="r ci">80–139</td></tr>
+<tr><td class="r">102</td><td>🇩🇪&nbsp;Leverkusen*</td><td class="r">62</td><td class="r ci">59–66</td><td class="r ci">100–143</td></tr>
+<tr><td class="r">103</td><td>🇩🇪&nbsp;Krefeld*</td><td class="r">62</td><td class="r ci">59–66</td><td class="r ci">96–148</td></tr>
+<tr><td class="r">104</td><td>🇪🇸&nbsp;Almería*</td><td class="r">62</td><td class="r ci">58–67</td><td class="r ci">103–129</td></tr>
+<tr><td class="r">105</td><td>🇩🇪&nbsp;Gelsenkirchen*</td><td class="r">62</td><td class="r ci">59–66</td><td class="r ci">99–149</td></tr>
+<tr><td class="r">106</td><td>🇩🇪&nbsp;Hamburg*</td><td class="r">62</td><td class="r ci">56–71</td><td class="r ci">84–154</td></tr>
+<tr><td class="r">107</td><td>🇪🇸&nbsp;Vigo*</td><td class="r">62</td><td class="r ci">56–71</td><td class="r ci">81–161</td></tr>
+<tr><td class="r">108</td><td>🇵🇱&nbsp;Gdańsk*</td><td class="r">62</td><td class="r ci">57–67</td><td class="r ci">106–132</td></tr>
+<tr><td class="r">109</td><td>🇪🇸&nbsp;Terrassa</td><td class="r">62</td><td class="r ci">58–66</td><td class="r ci">94–152</td></tr>
+<tr><td class="r">110</td><td>🇳🇴&nbsp;Stavanger*</td><td class="r">62</td><td class="r ci">54–71</td><td class="r ci">91–140</td></tr>
+<tr><td class="r">111</td><td>🇩🇪&nbsp;Hamm</td><td class="r">61</td><td class="r ci">58–65</td><td class="r ci">99–154</td></tr>
+<tr><td class="r">112</td><td>🇩🇪&nbsp;Mainz</td><td class="r">61</td><td class="r ci">58–65</td><td class="r ci">103–159</td></tr>
+<tr><td class="r">113</td><td>🇩🇪&nbsp;Nuremberg</td><td class="r">61</td><td class="r ci">58–65</td><td class="r ci">111–145</td></tr>
+<tr><td class="r">114</td><td>🇩🇪&nbsp;Rostock*</td><td class="r">61</td><td class="r ci">54–70</td><td class="r ci">89–156</td></tr>
+<tr><td class="r">115</td><td>🇫🇷&nbsp;Angers*</td><td class="r">61</td><td class="r ci">54–72</td><td class="r ci">79–170</td></tr>
+<tr><td class="r">116</td><td>🇭🇺&nbsp;Debrecen*</td><td class="r">61</td><td class="r ci">55–70</td><td class="r ci">93–143</td></tr>
+<tr><td class="r">117</td><td>🇵🇱&nbsp;Toruń</td><td class="r">61</td><td class="r ci">56–67</td><td class="r ci">102–156</td></tr>
+<tr><td class="r">118</td><td>🇵🇱&nbsp;Łódź</td><td class="r">61</td><td class="r ci">55–67</td><td class="r ci">109–135</td></tr>
+<tr><td class="r">119</td><td>🇳🇱&nbsp;Alkmaar*</td><td class="r">60</td><td class="r ci">54–69</td><td class="r ci">94–169</td></tr>
+<tr><td class="r">120</td><td>🇩🇪&nbsp;Leipzig*</td><td class="r">60</td><td class="r ci">52–69</td><td class="r ci">94–153</td></tr>
+<tr><td class="r">121</td><td>🇫🇷&nbsp;Clermont-Ferrand</td><td class="r">60</td><td class="r ci">57–63</td><td class="r ci">110–155</td></tr>
+<tr><td class="r">122</td><td>🇪🇸&nbsp;Jerez de la Frontera</td><td class="r">60</td><td class="r ci">54–66</td><td class="r ci">115–140</td></tr>
+<tr><td class="r">123</td><td>🇪🇪&nbsp;Tallinn*</td><td class="r">60</td><td class="r ci">51–76</td><td class="r ci">69–157</td></tr>
+<tr><td class="r">124</td><td>🇪🇸&nbsp;Granada</td><td class="r">60</td><td class="r ci">55–66</td><td class="r ci">103–175</td></tr>
+<tr><td class="r">125</td><td>🇭🇺&nbsp;Budapest</td><td class="r">60</td><td class="r ci">54–69</td><td class="r ci">103–151</td></tr>
+<tr><td class="r">126</td><td>🇩🇪&nbsp;Potsdam</td><td class="r">59</td><td class="r ci">53–68</td><td class="r ci">99–177</td></tr>
+<tr><td class="r">127</td><td>🇦🇹&nbsp;Linz</td><td class="r">59</td><td class="r ci">53–68</td><td class="r ci">101–175</td></tr>
+<tr><td class="r">128</td><td>🇫🇷&nbsp;Bordeaux</td><td class="r">59</td><td class="r ci">54–65</td><td class="r ci">114–170</td></tr>
+<tr><td class="r">129</td><td>🇨🇭&nbsp;Bern*</td><td class="r">59</td><td class="r ci">50–73</td><td class="r ci">75–198</td></tr>
+<tr><td class="r">130</td><td>🇩🇪&nbsp;Aachen</td><td class="r">59</td><td class="r ci">53–66</td><td class="r ci">103–182</td></tr>
+<tr><td class="r">131</td><td>🇵🇱&nbsp;Warsaw*</td><td class="r">59</td><td class="r ci">52–72</td><td class="r ci">83–172</td></tr>
+<tr><td class="r">132</td><td>🇧🇪&nbsp;Liège</td><td class="r">59</td><td class="r ci">52–71</td><td class="r ci">91–176</td></tr>
+<tr><td class="r">133</td><td>🇨🇭&nbsp;Geneva</td><td class="r">58</td><td class="r ci">53–66</td><td class="r ci">108–166</td></tr>
+<tr><td class="r">134</td><td>🇮🇹&nbsp;Venice*</td><td class="r">58</td><td class="r ci">51–77</td><td class="r ci">66–174</td></tr>
+<tr><td class="r">135</td><td>🇬🇧&nbsp;Bedford*</td><td class="r">58</td><td class="r ci">47–71</td><td class="r ci">90–175</td></tr>
+<tr><td class="r">136</td><td>🇩🇪&nbsp;Mönchengladbach</td><td class="r">58</td><td class="r ci">55–62</td><td class="r ci">114–175</td></tr>
+<tr><td class="r">137</td><td>🇵🇱&nbsp;Gdynia</td><td class="r">58</td><td class="r ci">54–62</td><td class="r ci">130–160</td></tr>
+<tr><td class="r">138</td><td>🇬🇧&nbsp;Edinburgh*</td><td class="r">58</td><td class="r ci">50–72</td><td class="r ci">88–163</td></tr>
+<tr><td class="r">139</td><td>🇪🇸&nbsp;Madrid</td><td class="r">58</td><td class="r ci">52–68</td><td class="r ci">110–161</td></tr>
+<tr><td class="r">140</td><td>🇮🇸&nbsp;Reykjavik</td><td class="r">58</td><td class="r ci">53–64</td><td class="r ci">115–177</td></tr>
+<tr><td class="r">141</td><td>🇩🇪&nbsp;Mülheim an der Ruhr</td><td class="r">58</td><td class="r ci">54–62</td><td class="r ci">126–177</td></tr>
+<tr><td class="r">142</td><td>🇩🇪&nbsp;Frankfurt</td><td class="r">58</td><td class="r ci">55–61</td><td class="r ci">123–173</td></tr>
+<tr><td class="r">143</td><td>🇲🇹&nbsp;Valletta*</td><td class="r">57</td><td class="r ci">47–72</td><td class="r ci">75–210</td></tr>
+<tr><td class="r">144</td><td>🇬🇧&nbsp;Peterborough*</td><td class="r">57</td><td class="r ci">49–72</td><td class="r ci">85–174</td></tr>
+<tr><td class="r">145</td><td>🇩🇰&nbsp;Aalborg</td><td class="r">57</td><td class="r ci">49–70</td><td class="r ci">98–171</td></tr>
+<tr><td class="r">146</td><td>🇬🇧&nbsp;Manchester</td><td class="r">57</td><td class="r ci">50–67</td><td class="r ci">117–166</td></tr>
+<tr><td class="r">147</td><td>🇬🇧&nbsp;York</td><td class="r">57</td><td class="r ci">48–67</td><td class="r ci">112–171</td></tr>
+<tr><td class="r">148</td><td>🇪🇸&nbsp;Oviedo*</td><td class="r">57</td><td class="r ci">47–73</td><td class="r ci">76–207</td></tr>
+<tr><td class="r">149</td><td>🇵🇱&nbsp;Poznań</td><td class="r">56</td><td class="r ci">53–62</td><td class="r ci">130–177</td></tr>
+<tr><td class="r">150</td><td>🇮🇹&nbsp;Florence</td><td class="r">56</td><td class="r ci">49–67</td><td class="r ci">114–172</td></tr>
+<tr><td class="r">151</td><td>🇵🇱&nbsp;Lublin</td><td class="r">56</td><td class="r ci">49–66</td><td class="r ci">119–175</td></tr>
+<tr><td class="r">152</td><td>🇬🇧&nbsp;Bristol</td><td class="r">56</td><td class="r ci">46–66</td><td class="r ci">117–181</td></tr>
+<tr><td class="r">153</td><td>🇸🇪&nbsp;Gothenburg</td><td class="r">56</td><td class="r ci">50–65</td><td class="r ci">125–189</td></tr>
+<tr><td class="r">154</td><td>🇫🇷&nbsp;Rouen</td><td class="r">55</td><td class="r ci">49–62</td><td class="r ci">110–212</td></tr>
+<tr><td class="r">155</td><td>🇩🇪&nbsp;Dortmund</td><td class="r">55</td><td class="r ci">48–63</td><td class="r ci">124–186</td></tr>
+<tr><td class="r">156</td><td>🇵🇱&nbsp;Kraków</td><td class="r">55</td><td class="r ci">48–62</td><td class="r ci">140–173</td></tr>
+<tr><td class="r">157</td><td>🇬🇧&nbsp;Brighton and Hove</td><td class="r">55</td><td class="r ci">48–62</td><td class="r ci">136–179</td></tr>
+<tr><td class="r">158</td><td>🇫🇷&nbsp;Mulhouse</td><td class="r">55</td><td class="r ci">50–60</td><td class="r ci">144–191</td></tr>
+<tr><td class="r">159</td><td>🇮🇪&nbsp;Dublin</td><td class="r">54</td><td class="r ci">47–63</td><td class="r ci">124–187</td></tr>
+<tr><td class="r">160</td><td>🇮🇹&nbsp;Modena*</td><td class="r">54</td><td class="r ci">43–74</td><td class="r ci">75–219</td></tr>
+<tr><td class="r">161</td><td>🇩🇪&nbsp;Bielefeld</td><td class="r">54</td><td class="r ci">48–62</td><td class="r ci">135–191</td></tr>
+<tr><td class="r">162</td><td>🇬🇧&nbsp;Nottingham</td><td class="r">54</td><td class="r ci">50–58</td><td class="r ci">150–187</td></tr>
+<tr><td class="r">163</td><td>🇩🇪&nbsp;Stuttgart</td><td class="r">54</td><td class="r ci">48–60</td><td class="r ci">134–208</td></tr>
+<tr><td class="r">164</td><td>🇩🇪&nbsp;Darmstadt</td><td class="r">53</td><td class="r ci">47–60</td><td class="r ci">129–217</td></tr>
+<tr><td class="r">165</td><td>🇸🇰&nbsp;Bratislava</td><td class="r">53</td><td class="r ci">47–60</td><td class="r ci">160–180</td></tr>
+<tr><td class="r">166</td><td>🇵🇱&nbsp;Rzeszów</td><td class="r">53</td><td class="r ci">48–60</td><td class="r ci">158–183</td></tr>
+<tr><td class="r">167</td><td>🇸🇪&nbsp;Linköping</td><td class="r">53</td><td class="r ci">49–57</td><td class="r ci">138–208</td></tr>
+<tr><td class="r">168</td><td>🇬🇧&nbsp;Swindon</td><td class="r">52</td><td class="r ci">44–69</td><td class="r ci">104–199</td></tr>
+<tr><td class="r">169</td><td>🇩🇪&nbsp;Kassel</td><td class="r">52</td><td class="r ci">45–62</td><td class="r ci">126–223</td></tr>
+<tr><td class="r">170</td><td>🇨🇭&nbsp;Zurich</td><td class="r">52</td><td class="r ci">46–59</td><td class="r ci">143–210</td></tr>
+<tr><td class="r">171</td><td>🇩🇪&nbsp;Dresden</td><td class="r">52</td><td class="r ci">45–62</td><td class="r ci">132–207</td></tr>
+<tr><td class="r">172</td><td>🇫🇷&nbsp;Reims</td><td class="r">52</td><td class="r ci">48–57</td><td class="r ci">157–202</td></tr>
+<tr><td class="r">173</td><td>🇫🇷&nbsp;Metz</td><td class="r">52</td><td class="r ci">47–57</td><td class="r ci">154–207</td></tr>
+<tr><td class="r">174</td><td>🇵🇱&nbsp;Bydgoszcz</td><td class="r">52</td><td class="r ci">46–60</td><td class="r ci">154–197</td></tr>
+<tr><td class="r">175</td><td>🇮🇹&nbsp;Bergamo</td><td class="r">52</td><td class="r ci">43–63</td><td class="r ci">140–191</td></tr>
+<tr><td class="r">176</td><td>🇨🇿&nbsp;Plzeň*</td><td class="r">52</td><td class="r ci">43–68</td><td class="r ci">109–199</td></tr>
+<tr><td class="r">177</td><td>🇫🇷&nbsp;Toulon</td><td class="r">52</td><td class="r ci">45–61</td><td class="r ci">139–205</td></tr>
+<tr><td class="r">178</td><td>🇮🇹&nbsp;Turin*</td><td class="r">52</td><td class="r ci">41–88</td><td class="r ci">39–223</td></tr>
+<tr><td class="r">179</td><td>🇬🇧&nbsp;Portsmouth</td><td class="r">52</td><td class="r ci">46–58</td><td class="r ci">168–193</td></tr>
+<tr><td class="r">180</td><td>🇮🇹&nbsp;Parma*</td><td class="r">52</td><td class="r ci">42–73</td><td class="r ci">81–218</td></tr>
+<tr><td class="r">181</td><td>🇩🇪&nbsp;Essen</td><td class="r">51</td><td class="r ci">46–57</td><td class="r ci">161–204</td></tr>
+<tr><td class="r">182</td><td>🇱🇻&nbsp;Riga</td><td class="r">51</td><td class="r ci">43–60</td><td class="r ci">162–192</td></tr>
+<tr><td class="r">183</td><td>🇬🇧&nbsp;Telford</td><td class="r">51</td><td class="r ci">42–65</td><td class="r ci">128–200</td></tr>
+<tr><td class="r">184</td><td>🇬🇧&nbsp;Newcastle upon Tyne</td><td class="r">50</td><td class="r ci">42–61</td><td class="r ci">153–197</td></tr>
+<tr><td class="r">185</td><td>🇩🇪&nbsp;Bochum</td><td class="r">50</td><td class="r ci">43–60</td><td class="r ci">141–217</td></tr>
+<tr><td class="r">186</td><td>🇵🇱&nbsp;Szczecin</td><td class="r">50</td><td class="r ci">45–57</td><td class="r ci">171–207</td></tr>
+<tr><td class="r">187</td><td>🇵🇱&nbsp;Kielce</td><td class="r">50</td><td class="r ci">45–56</td><td class="r ci">180–203</td></tr>
+<tr><td class="r">188</td><td>🇨🇭&nbsp;Basel</td><td class="r">50</td><td class="r ci">46–54</td><td class="r ci">149–223</td></tr>
+<tr><td class="r">189</td><td>🇫🇷&nbsp;Le Havre</td><td class="r">50</td><td class="r ci">42–57</td><td class="r ci">173–201</td></tr>
+<tr><td class="r">190</td><td>🇬🇧&nbsp;Leeds*</td><td class="r">49</td><td class="r ci">41–64</td><td class="r ci">132–213</td></tr>
+<tr><td class="r">191</td><td>🇬🇧&nbsp;Birmingham*</td><td class="r">49</td><td class="r ci">39–68</td><td class="r ci">111–213</td></tr>
+<tr><td class="r">192</td><td>🇫🇷&nbsp;Saint-Étienne*</td><td class="r">49</td><td class="r ci">42–58</td><td class="r ci">150–228</td></tr>
+<tr><td class="r">193</td><td>🇬🇧&nbsp;Swansea*</td><td class="r">49</td><td class="r ci">38–65</td><td class="r ci">127–213</td></tr>
+<tr><td class="r">194</td><td>🇪🇸&nbsp;Cartagena*</td><td class="r">48</td><td class="r ci">42–56</td><td class="r ci">166–220</td></tr>
+<tr><td class="r">195</td><td>🇮🇹&nbsp;Verona*</td><td class="r">48</td><td class="r ci">40–63</td><td class="r ci">139–214</td></tr>
+<tr><td class="r">196</td><td>🇮🇹&nbsp;Pescara*</td><td class="r">48</td><td class="r ci">40–60</td><td class="r ci">155–209</td></tr>
+<tr><td class="r">197</td><td>🇭🇷&nbsp;Zagreb*</td><td class="r">48</td><td class="r ci">39–58</td><td class="r ci">172–212</td></tr>
+<tr><td class="r">198</td><td>🇩🇪&nbsp;Hagen*</td><td class="r">48</td><td class="r ci">40–59</td><td class="r ci">146–235</td></tr>
+<tr><td class="r">199</td><td>🇬🇧&nbsp;London*</td><td class="r">48</td><td class="r ci">40–57</td><td class="r ci">181–207</td></tr>
+<tr><td class="r">200</td><td>🇨🇭&nbsp;Lausanne*</td><td class="r">48</td><td class="r ci">39–62</td><td class="r ci">130–239</td></tr>
+<tr class="grp gt3"><td colspan="5">Tier 3 — higher assessed risk</td></tr>
+<tr><td class="r">201</td><td>🇪🇸&nbsp;Alcalá de Henares*</td><td class="r">48</td><td class="r ci">42–55</td><td class="r ci">167–230</td></tr>
+<tr><td class="r">202</td><td>🇨🇿&nbsp;Prague*</td><td class="r">48</td><td class="r ci">40–55</td><td class="r ci">188–212</td></tr>
+<tr><td class="r">203</td><td>🇬🇧&nbsp;Southampton*</td><td class="r">47</td><td class="r ci">40–54</td><td class="r ci">194–211</td></tr>
+<tr><td class="r">204</td><td>🇱🇹&nbsp;Vilnius*</td><td class="r">47</td><td class="r ci">40–54</td><td class="r ci">187–217</td></tr>
+<tr><td class="r">205</td><td>🇩🇪&nbsp;Saarbrücken*</td><td class="r">46</td><td class="r ci">37–60</td><td class="r ci">139–244</td></tr>
+<tr><td class="r">206</td><td>🇬🇧&nbsp;Plymouth*</td><td class="r">46</td><td class="r ci">37–57</td><td class="r ci">182–219</td></tr>
+<tr><td class="r">207</td><td>🇬🇧&nbsp;Wolverhampton*</td><td class="r">46</td><td class="r ci">37–62</td><td class="r ci">146–225</td></tr>
+<tr><td class="r">208</td><td>🇩🇪&nbsp;Wuppertal*</td><td class="r">46</td><td class="r ci">40–53</td><td class="r ci">182–233</td></tr>
+<tr><td class="r">209</td><td>🇬🇧&nbsp;Derby*</td><td class="r">46</td><td class="r ci">37–60</td><td class="r ci">161–221</td></tr>
+<tr><td class="r">210</td><td>🇬🇧&nbsp;Glasgow*</td><td class="r">46</td><td class="r ci">37–63</td><td class="r ci">141–227</td></tr>
+<tr><td class="r">211</td><td>🇮🇹&nbsp;Brescia*</td><td class="r">46</td><td class="r ci">36–66</td><td class="r ci">123–237</td></tr>
+<tr><td class="r">212</td><td>🇫🇷&nbsp;Nice</td><td class="r">45</td><td class="r ci">39–53</td><td class="r ci">197–219</td></tr>
+<tr><td class="r">213</td><td>🇬🇧&nbsp;Sunderland*</td><td class="r">45</td><td class="r ci">34–59</td><td class="r ci">164–230</td></tr>
+<tr><td class="r">214</td><td>🇬🇧&nbsp;Sheffield*</td><td class="r">45</td><td class="r ci">36–53</td><td class="r ci">198–225</td></tr>
+<tr><td class="r">215</td><td>🇬🇧&nbsp;Warrington</td><td class="r">44</td><td class="r ci">38–54</td><td class="r ci">186–235</td></tr>
+<tr><td class="r">216</td><td>🇵🇱&nbsp;Katowice</td><td class="r">44</td><td class="r ci">36–52</td><td class="r ci">205–225</td></tr>
+<tr><td class="r">217</td><td>🇵🇱&nbsp;Częstochowa</td><td class="r">44</td><td class="r ci">36–55</td><td class="r ci">170–247</td></tr>
+<tr><td class="r">218</td><td>🇩🇪&nbsp;Erfurt</td><td class="r">44</td><td class="r ci">38–49</td><td class="r ci">205–230</td></tr>
+<tr><td class="r">219</td><td>🇬🇧&nbsp;Leicester</td><td class="r">43</td><td class="r ci">35–55</td><td class="r ci">186–236</td></tr>
+<tr><td class="r">220</td><td>🇩🇪&nbsp;Chemnitz</td><td class="r">42</td><td class="r ci">35–51</td><td class="r ci">199–239</td></tr>
+<tr><td class="r">221</td><td>🇵🇱&nbsp;Radom</td><td class="r">42</td><td class="r ci">36–50</td><td class="r ci">202–237</td></tr>
+<tr><td class="r">222</td><td>🇫🇷&nbsp;Marseille</td><td class="r">42</td><td class="r ci">34–50</td><td class="r ci">207–233</td></tr>
+<tr><td class="r">223</td><td>🇮🇹&nbsp;Prato*</td><td class="r">42</td><td class="r ci">32–61</td><td class="r ci">147–250</td></tr>
+<tr><td class="r">224</td><td>🇵🇱&nbsp;Gliwice</td><td class="r">42</td><td class="r ci">37–48</td><td class="r ci">203–242</td></tr>
+<tr><td class="r">225</td><td>🇬🇧&nbsp;Basingstoke</td><td class="r">42</td><td class="r ci">36–48</td><td class="r ci">215–232</td></tr>
+<tr><td class="r">226</td><td>🇵🇱&nbsp;Sosnowiec</td><td class="r">42</td><td class="r ci">35–48</td><td class="r ci">219–232</td></tr>
+<tr><td class="r">227</td><td>🇮🇹&nbsp;Genoa</td><td class="r">40</td><td class="r ci">32–51</td><td class="r ci">196–252</td></tr>
+<tr><td class="r">228</td><td>🇪🇸&nbsp;Fuenlabrada</td><td class="r">40</td><td class="r ci">34–45</td><td class="r ci">227–238</td></tr>
+<tr><td class="r">229</td><td>🇬🇧&nbsp;Stoke-on-Trent</td><td class="r">40</td><td class="r ci">29–58</td><td class="r ci">172–251</td></tr>
+<tr><td class="r">230</td><td>🇧🇬&nbsp;Plovdiv</td><td class="r">40</td><td class="r ci">29–60</td><td class="r ci">156–256</td></tr>
+<tr><td class="r">231</td><td>🇬🇷&nbsp;Thessaloniki</td><td class="r">40</td><td class="r ci">28–57</td><td class="r ci">167–259</td></tr>
+<tr><td class="r">232</td><td>🇬🇧&nbsp;Kingston upon Hull</td><td class="r">40</td><td class="r ci">31–51</td><td class="r ci">206–243</td></tr>
+<tr><td class="r">233</td><td>🇱🇹&nbsp;Kaunas</td><td class="r">40</td><td class="r ci">34–45</td><td class="r ci">225–240</td></tr>
+<tr><td class="r">234</td><td>🇸🇰&nbsp;Košice</td><td class="r">40</td><td class="r ci">33–46</td><td class="r ci">218–242</td></tr>
+<tr><td class="r">235</td><td>🇨🇿&nbsp;Ostrava</td><td class="r">39</td><td class="r ci">31–53</td><td class="r ci">198–247</td></tr>
+<tr><td class="r">236</td><td>🇬🇧&nbsp;Medway</td><td class="r">39</td><td class="r ci">29–49</td><td class="r ci">218–245</td></tr>
+<tr><td class="r">237</td><td>🇬🇧&nbsp;Cardiff</td><td class="r">38</td><td class="r ci">32–44</td><td class="r ci">222–247</td></tr>
+<tr><td class="r">238</td><td>🇨🇿&nbsp;Brno</td><td class="r">38</td><td class="r ci">32–43</td><td class="r ci">232–244</td></tr>
+<tr><td class="r">239</td><td>🇩🇪&nbsp;Wiesbaden</td><td class="r">38</td><td class="r ci">34–41</td><td class="r ci">216–257</td></tr>
+<tr><td class="r">240</td><td>🇬🇧&nbsp;Coventry</td><td class="r">37</td><td class="r ci">28–53</td><td class="r ci">196–257</td></tr>
+<tr><td class="r">241</td><td>🇬🇧&nbsp;Colchester</td><td class="r">37</td><td class="r ci">31–44</td><td class="r ci">231–251</td></tr>
+<tr><td class="r">242</td><td>🇮🇹&nbsp;Milan</td><td class="r">37</td><td class="r ci">28–48</td><td class="r ci">218–251</td></tr>
+<tr><td class="r">243</td><td>🇬🇧&nbsp;Bradford</td><td class="r">37</td><td class="r ci">28–46</td><td class="r ci">229–250</td></tr>
+<tr><td class="r">244</td><td>🇮🇹&nbsp;Padua</td><td class="r">36</td><td class="r ci">31–43</td><td class="r ci">234–252</td></tr>
+<tr><td class="r">245</td><td>🇧🇬&nbsp;Varna</td><td class="r">36</td><td class="r ci">28–43</td><td class="r ci">227–254</td></tr>
+<tr><td class="r">246</td><td>🇷🇴&nbsp;Cluj-Napoca</td><td class="r">36</td><td class="r ci">29–42</td><td class="r ci">230–256</td></tr>
+<tr><td class="r">247</td><td>🇵🇹&nbsp;Lisbon</td><td class="r">34</td><td class="r ci">24–51</td><td class="r ci">203–269</td></tr>
+<tr><td class="r">248</td><td>🇧🇪&nbsp;Charleroi</td><td class="r">33</td><td class="r ci">26–45</td><td class="r ci">228–261</td></tr>
+<tr><td class="r">249</td><td>🇬🇧&nbsp;Luton</td><td class="r">33</td><td class="r ci">27–39</td><td class="r ci">248–256</td></tr>
+<tr><td class="r">250</td><td>🇮🇪&nbsp;Cork</td><td class="r">32</td><td class="r ci">27–38</td><td class="r ci">243–262</td></tr>
+<tr><td class="r">251</td><td>🇮🇹&nbsp;Trieste</td><td class="r">32</td><td class="r ci">25–40</td><td class="r ci">248–258</td></tr>
+<tr><td class="r">252</td><td>🇫🇷&nbsp;Dijon</td><td class="r">32</td><td class="r ci">28–36</td><td class="r ci">233–268</td></tr>
+<tr><td class="r">253</td><td>🇧🇬&nbsp;Sofia</td><td class="r">32</td><td class="r ci">24–39</td><td class="r ci">250–260</td></tr>
+<tr><td class="r">254</td><td>🇵🇹&nbsp;Porto</td><td class="r">32</td><td class="r ci">22–43</td><td class="r ci">224–268</td></tr>
+<tr><td class="r">255</td><td>🇮🇹&nbsp;Rome</td><td class="r">31</td><td class="r ci">22–42</td><td class="r ci">243–266</td></tr>
+<tr><td class="r">256</td><td>🇬🇧&nbsp;Northampton</td><td class="r">31</td><td class="r ci">22–40</td><td class="r ci">248–263</td></tr>
+<tr><td class="r">257</td><td>🇵🇹&nbsp;Sintra</td><td class="r">30</td><td class="r ci">21–40</td><td class="r ci">244–267</td></tr>
+<tr><td class="r">258</td><td>🇬🇧&nbsp;Aberdeen</td><td class="r">30</td><td class="r ci">25–34</td><td class="r ci">252–266</td></tr>
+<tr><td class="r">259</td><td>🇬🇧&nbsp;Belfast</td><td class="r">30</td><td class="r ci">22–39</td><td class="r ci">248–266</td></tr>
+<tr><td class="r">260</td><td>🇮🇹&nbsp;Cagliari</td><td class="r">30</td><td class="r ci">22–39</td><td class="r ci">245–271</td></tr>
+<tr><td class="r">261</td><td>🇬🇷&nbsp;Patras</td><td class="r">29</td><td class="r ci">18–44</td><td class="r ci">217–279</td></tr>
+<tr><td class="r">262</td><td>🇬🇧&nbsp;Liverpool</td><td class="r">29</td><td class="r ci">22–36</td><td class="r ci">256–268</td></tr>
+<tr><td class="r">263</td><td>🇮🇹&nbsp;Naples</td><td class="r">28</td><td class="r ci">19–41</td><td class="r ci">232–275</td></tr>
+<tr><td class="r">264</td><td>🇮🇹&nbsp;Palermo</td><td class="r">28</td><td class="r ci">20–36</td><td class="r ci">258–270</td></tr>
+<tr><td class="r">265</td><td>🇮🇹&nbsp;Messina</td><td class="r">27</td><td class="r ci">16–44</td><td class="r ci">221–280</td></tr>
+<tr><td class="r">266</td><td>🇷🇴&nbsp;Arad</td><td class="r">26</td><td class="r ci">19–34</td><td class="r ci">260–273</td></tr>
+<tr><td class="r">267</td><td>🇷🇴&nbsp;Satu Mare</td><td class="r">26</td><td class="r ci">16–41</td><td class="r ci">233–284</td></tr>
+<tr><td class="r">268</td><td>🇬🇧&nbsp;Doncaster</td><td class="r">26</td><td class="r ci">18–33</td><td class="r ci">264–274</td></tr>
+<tr><td class="r">269</td><td>🇮🇹&nbsp;Taranto</td><td class="r">26</td><td class="r ci">19–31</td><td class="r ci">264–272</td></tr>
+<tr><td class="r">270</td><td>🇷🇴&nbsp;Oradea</td><td class="r">26</td><td class="r ci">16–42</td><td class="r ci">239–284</td></tr>
+<tr><td class="r">271</td><td>🇨🇾&nbsp;Nicosia</td><td class="r">25</td><td class="r ci">19–31</td><td class="r ci">267–272</td></tr>
+<tr><td class="r">272</td><td>🇷🇴&nbsp;Targu Mures</td><td class="r">23</td><td class="r ci">19–27</td><td class="r ci">261–279</td></tr>
+<tr><td class="r">273</td><td>🇮🇹&nbsp;Reggio Calabria</td><td class="r">23</td><td class="r ci">13–37</td><td class="r ci">245–286</td></tr>
+<tr><td class="r">274</td><td>🇧🇬&nbsp;Burgas</td><td class="r">22</td><td class="r ci">13–35</td><td class="r ci">258–286</td></tr>
+<tr><td class="r">275</td><td>🇷🇴&nbsp;Brasov</td><td class="r">22</td><td class="r ci">18–25</td><td class="r ci">264–281</td></tr>
+<tr><td class="r">276</td><td>🇬🇧&nbsp;Maidstone</td><td class="r">21</td><td class="r ci">14–30</td><td class="r ci">262–284</td></tr>
+<tr><td class="r">277</td><td>🇷🇴&nbsp;Sibiu</td><td class="r">21</td><td class="r ci">17–24</td><td class="r ci">273–279</td></tr>
+<tr><td class="r">278</td><td>🇬🇧&nbsp;Bournemouth</td><td class="r">20</td><td class="r ci">14–26</td><td class="r ci">271–281</td></tr>
+<tr><td class="r">279</td><td>🇮🇹&nbsp;Bari</td><td class="r">20</td><td class="r ci">13–26</td><td class="r ci">272–285</td></tr>
+<tr><td class="r">280</td><td>🇵🇹&nbsp;Braga</td><td class="r">19</td><td class="r ci">14–24</td><td class="r ci">274–283</td></tr>
+<tr><td class="r">281</td><td>🇷🇴&nbsp;Timisoara</td><td class="r">19</td><td class="r ci">14–24</td><td class="r ci">275–282</td></tr>
+<tr><td class="r">282</td><td>🇮🇹&nbsp;Catania</td><td class="r">18</td><td class="r ci">9–28</td><td class="r ci">266–290</td></tr>
+<tr><td class="r">283</td><td>🇷🇴&nbsp;Constanta</td><td class="r">17</td><td class="r ci">12–21</td><td class="r ci">280–286</td></tr>
+<tr><td class="r">284</td><td>🇬🇷&nbsp;Athens</td><td class="r">16</td><td class="r ci">12–20</td><td class="r ci">281–285</td></tr>
+<tr><td class="r">285</td><td>🇷🇴&nbsp;Baia Mare</td><td class="r">15</td><td class="r ci">10–20</td><td class="r ci">279–289</td></tr>
+<tr><td class="r">286</td><td>🇷🇴&nbsp;Bucharest</td><td class="r">15</td><td class="r ci">10–19</td><td class="r ci">277–289</td></tr>
+<tr><td class="r">287</td><td>🇨🇾&nbsp;Limassol</td><td class="r">14</td><td class="r ci">9–21</td><td class="r ci">279–290</td></tr>
+<tr><td class="r">288</td><td>🇭🇷&nbsp;Split</td><td class="r">12</td><td class="r ci">7–18</td><td class="r ci">278–294</td></tr>
+<tr><td class="r">289</td><td>🇷🇴&nbsp;Bacau</td><td class="r">12</td><td class="r ci">7–17</td><td class="r ci">282–289</td></tr>
+<tr><td class="r">290</td><td>🇷🇴&nbsp;Pitesti</td><td class="r">10</td><td class="r ci">5–14</td><td class="r ci">287–293</td></tr>
+<tr><td class="r">291</td><td>🇨🇾&nbsp;Strovolos</td><td class="r">9</td><td class="r ci">4–16</td><td class="r ci">285–294</td></tr>
+<tr><td class="r">292</td><td>🇷🇴&nbsp;Craiova</td><td class="r">7</td><td class="r ci">3–11</td><td class="r ci">290–294</td></tr>
+<tr><td class="r">293</td><td>🇷🇴&nbsp;Galati</td><td class="r">6</td><td class="r ci">3–10</td><td class="r ci">291–295</td></tr>
+<tr><td class="r">294</td><td>🇨🇾&nbsp;Paphos</td><td class="r">5</td><td class="r ci">2–10</td><td class="r ci">292–295</td></tr>
+<tr><td class="r">295</td><td>🇷🇴&nbsp;Botosani</td><td class="r">3</td><td class="r ci">0–6</td><td class="r ci">292–296</td></tr>
+<tr><td class="r">296</td><td>🇷🇴&nbsp;Buzau</td><td class="r">2</td><td class="r ci">0–5</td><td class="r ci">294–298</td></tr>
+<tr><td class="r">297</td><td>🇷🇴&nbsp;Ploiesti</td><td class="r">1</td><td class="r ci">0–5</td><td class="r ci">295–298</td></tr>
+<tr><td class="r">298</td><td>🇷🇴&nbsp;Braila</td><td class="r">1</td><td class="r ci">0–3</td><td class="r ci">297–299</td></tr>
+<tr><td class="r">299</td><td>🇷🇴&nbsp;Iasi</td><td class="r">0</td><td class="r ci">0–0</td><td class="r ci">299–300</td></tr>
+<tr><td class="r">300</td><td>🇨🇾&nbsp;Larnaca</td><td class="r">0</td><td class="r ci">0–2</td><td class="r ci">296–300</td></tr></tbody>
 </table></div>
 
 <div class="citycta" id="forcities">

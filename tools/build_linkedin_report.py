@@ -120,16 +120,22 @@ scatter = (
     + '</svg>')
 
 # ---- full table --------------------------------------------------------------
+# 90% index range on the fixed scale, when the edition carries one (ccri_pilot/pedalability_scale.py)
+_absp = os.path.join(edition.RESULTS, "absolute_scores.json")
+absolute = json.load(open(_absp, encoding="utf-8")) if os.path.exists(_absp) else None
+NCOL = 5 if absolute else 4
 TIER_NAME = {1: "Tier 1 — lower assessed risk", 2: "Tier 2 — middle", 3: "Tier 3 — higher assessed risk"}
 rows = []
 for t in (1, 2, 3):
-    rows.append(f'<tr class="grp gt{t}"><td colspan="4">{TIER_NAME[t]}</td></tr>')
+    rows.append(f'<tr class="grp gt{t}"><td colspan="{NCOL}">{TIER_NAME[t]}</td></tr>')
     for c in [c for c in cities if c["tier"] == t]:
         star = "" if c["placed"] else "*"
         rows.append(f'<tr><td class="r">{c["rank"]}</td>'
                     f'<td>{FLAG.get(c["iso2"].upper(),"")}&nbsp;{c["label"]}{star}</td>'
                     f'<td class="r">{c["index"]:.0f}</td>'
-                    f'<td class="r ci">{c["rank_lo"]}–{c["rank_hi"]}</td></tr>')
+                    + (f'<td class="r ci">{absolute[c["slug"]]["index_lo"]:.0f}–'
+                       f'{absolute[c["slug"]]["index_hi"]:.0f}</td>' if absolute else "")
+                    + f'<td class="r ci">{c["rank_lo"]}–{c["rank_hi"]}</td></tr>')
 table = "\n".join(rows)
 
 ro = [c for c in cities if c["iso2"].upper() == "RO"]
@@ -282,6 +288,7 @@ th,td {{ padding:6px 10px; border-bottom:1px solid var(--rule); text-align:left;
 thead th {{ font-size:11.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink3); }}
 td.r {{ text-align:right; font-variant-numeric:tabular-nums; }}
 td.ci {{ color:var(--ink3); font-size:13px; }}
+@media (max-width:480px) {{ th,td {{ padding:6px 5px; }} }}
 tr.grp.gt1 td {{ border-bottom-color:var(--g2); }} tr.grp.gt2 td {{ border-bottom-color:var(--y2); }}
 tr.grp.gt3 td {{ border-bottom-color:var(--r2); }}
 tr.grp td {{ font-weight:800; padding-top:22px; border-bottom:2px solid var(--ink2); font-size:12.5px;
@@ -548,10 +555,11 @@ are marketing.</div>
 
 <h2>The full ranking</h2>
 <p class="figcap">* = straddles a tier boundary under re-specification. Index 0–100 on a fixed
-scale (v1), higher = lower assessed risk. Interval = 90% rank range over 2,000 re-runs.</p>
+scale (v1), higher = lower assessed risk.{" Index range = where the index lands in 90% of 2,000 re-runs." if absolute else ""}
+Interval = 90% rank range over the same re-runs.</p>
 </div>
 <div class="tblwrap"><table>
-<thead><tr><th>#</th><th>City</th><th>Index</th><th>Interval</th></tr></thead>
+<thead><tr><th>#</th><th>City</th><th>Index</th>{"<th>Index range</th>" if absolute else ""}<th>Interval</th></tr></thead>
 <tbody>{table}</tbody>
 </table></div>
 
