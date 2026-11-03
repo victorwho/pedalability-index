@@ -6,8 +6,8 @@ authors:
     given-names: Victor
     affiliation: Defensive Pedal Research
 type: report
-version: 2.0.0
-date-released: 2026-10-20  # set to launch day
+version: 2.0.1
+date-released: 2026-11-03  # set to launch day
 license: CC-BY-4.0
 doi: 10.5281/zenodo.22771452
 url: "https://victorwho.github.io/pedalability-index/"
